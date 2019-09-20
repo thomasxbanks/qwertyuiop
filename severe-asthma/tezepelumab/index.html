@@ -1,12 +1,231 @@
-<!DOCTYPE html><html lang="en" class="no-js"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');</script><meta name="application-name" content="AZ Respiratory Resource Tool" data-name="cooper-az-respitool" data-version="1.0.0" data-geoid="en_GB"><meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *"><title>AZ Respiratory Resource Tool</title><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../fonts/stylesheet.css"></head><body data-colorscheme="light" data-page="severe-asthma-tezepelumab" data-active="false" data-nav="severe-asthma"><header class="masthead"><a class="home-link" href="../../index.html" title="Home"><svg class="company-logo icon__inline-svg"><use xlink:href="#logo-az" role="presentation"></use></svg> </a><span><svg class="icon__inline-svg"><use xlink:href="#logo-reframing" role="presentation"></use></svg> </span><button data-action="toggle-nav" data-active="false" aria-label="Toggle menu"><span data-hamburger class="icon"><svg class="icon__inline-svg"><use xlink:href="#icon-nav" role="presentation"></use></svg> </span><span data-close class="icon"><svg class="icon__inline-svg"><use xlink:href="#icon-close" role="presentation"></use></svg></span></button><nav class="primary-navigation" data-active="false" data-target="primary-nav"><ul class="slide-children-into-place"><li><a data-nav="home" tabindex="-1" href="../../index.html">Home</a></li><li><a data-nav="reframing-respiratory-care" tabindex="-1" href="../../reframing-respiratory-care/index.html">Reframing Respiratory Care</a></li><li><a data-nav="severe-asthma" tabindex="-1" href="../../severe-asthma/index.html">Severe Asthma</a></li><li><a data-nav="moderate-severe-asthma" tabindex="-1" href="../../moderate-severe-asthma/index.html">Moderate/Severe Asthma</a></li><li><a data-nav="mild-asthma" tabindex="-1" href="../../mild-asthma/index.html">Mild Asthma</a></li><li><a data-action="reset-publications" data-nav="publications" tabindex="-1" href="../../publications/index.html">Publications</a></li></ul></nav></header><div class="grid"><aside class="sidebar first"><nav class="page-navigation"><ul><li><a href="../index.html">Severe Asthma</a></li><li><a href="../benralizumab/index.html">Benralizumab</a></li><li><a href="../precision/index.html">Precision</a></li><li data-active="true" data-visible="false" data-target="tezepelumab"><a href="index.html">Tezepelumab<sup>*</sup></a></li></ul></nav><div class="footer_container"><small class="footnote"><strong><sup>*</sup> Tezepelumab is not indicated for treatment of severe asthma.</strong></small><footer class="colophon"><p>&copy;2019 AstraZeneca. All rights reserved.</p><p>Document Number xx-xxxx-xxx-xxxx</p><p>Approval Date: x/19 Expiration Date: x/xx</p></footer><div class="references_container"><button data-action="open-modal">References</button><div class="references" data-active="false" style="background-image: url(../../images/references-bg.png)"><div class="grid"><div class="references_content"><button data-action="close-modal" aria-label="Close references"><span data-close class="icon"><svg class="icon__inline-svg"><use xlink:href="#icon-close" role="presentation"></use></svg></span></button><header class="page_header primary"><h1 class="title">References</h1></header><ol class="slide-children-into-place"><li><span>1</span> Menzies-Gow A et al. Adv Ther. 2018; 35(10): 1485-1496.</li><li><span>2</span> Busse WW et al. Lancet Respir Med. 2019; 7(1): 46-59.</li><li><span>3</span> Corren J et al. N Engl J Med. 2017; 377: 936-946.</li><li><span>4</span> Sastre J et al. World Allergy Organ J. 2016; 9(13): 1-12.</li><li><span>5</span> Castillo JR et al. J Allergy Clin Immunol Pract. 2017; 5(4): 918–927.</li><li><span>6</span> O’Byrne PM et al. Eur Respir J. 2017; 50: 1-8.</li><li><span>7</span> Vogelmeier C. et al. Eur Respir J. 2005; 26(5): 819-828.</li><li><span>8</span> Scicchitano R et al. Curr Med Res Opin. 2004; 20(9): 1403-1418.</li><li><span>9</span> Bateman ED et al. N Eng J Med. 2018; 378: 1877-1887.</li><li><span>10</span> O’Bryne et al. N Eng J Med. 2018; 378: 1865-1876.</li></ol></div></div><script>let modal = document.querySelector('.references')
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');</script>
+  <meta name="application-name" content="AZ Respiratory Resource Tool" data-name="cooper-az-respitool" data-version="1.0.0" data-geoid="en_GB" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+  <title>AZ Respiratory Resource Tool</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../fonts/stylesheet.css">
+</head>
+<body data-colorscheme="light" data-page="severe-asthma-tezepelumab" data-active="false" data-nav="severe-asthma">
+  <header class="masthead">
+    <a class="home-link" href="../../index.html" title="Home">
+      <svg class="company-logo icon__inline-svg">
+        <use xlink:href="#logo-az" role="presentation"></use>
+      </svg>
+    </a>
+    <span>
+      <svg class="icon__inline-svg">
+        <use xlink:href="#logo-reframing" role="presentation"></use>
+      </svg>
+    </span>
+  
+    <button data-action="toggle-nav" data-active="false" aria-label="Toggle menu">
+      <span data-hamburger class="icon">
+        <svg class="icon__inline-svg">
+          <use xlink:href="#icon-nav" role="presentation"></use>
+        </svg>
+      </span>
+      <span data-close class="icon">
+        <svg class="icon__inline-svg">
+          <use xlink:href="#icon-close" role="presentation"></use>
+        </svg>
+      </span>
+    </button>  <nav class="primary-navigation tray-animation" data-active="false" data-target="primary-nav">
+      <ul>
+        <li><a data-nav="home" tabindex="-1" href="../../index.html">Home</a></li>
+        <li><a data-nav="reframing-respiratory-care" tabindex="-1" href="../../reframing-respiratory-care/index.html">Reframing Respiratory Care</a></li>
+        <li><a data-nav="severe-asthma" tabindex="-1" href="../../severe-asthma/index.html">Severe Asthma</a></li>
+        <li><a data-nav="moderate-severe-asthma" tabindex="-1" href="../../moderate-severe-asthma/index.html">Moderate/Severe Asthma</a></li>
+        <li><a data-nav="mild-asthma" tabindex="-1" href="../../mild-asthma/index.html">Mild Asthma</a></li>
+        <li><a data-action="reset-publications" data-nav="publications" tabindex="-1" href="../../publications/index.html">Publications</a></li>
+      </ul>
+    </nav></header>
+  <div class="grid">
+    <aside class="sidebar first"><nav class="page-navigation">
+  <ul>
+    <li><a href="../index.html">Severe Asthma</a></li>
+    <li><a href="../benralizumab/index.html">Benralizumab</a></li>
+    <li><a href="../precision/index.html">Precision</a></li>
+    <li data-active="true" data-target="tezepelumab"><a href="index.html">Tezepelumab<sup>*</sup></a></li>
+  </ul>
+</nav>
+<div class="footer_container">
+  <small class="footnote">
+    <strong><sup>*</sup> Tezepelumab is not indicated for treatment of severe asthma.</strong>
+  </small>
+  <footer class="colophon">
+    <p>&copy;2019 AstraZeneca. All rights reserved.</p>
+    <p>Document Number xx-xxxx-xxx-xxxx</p>
+    <p>Approval Date: x/19 Expiration Date: x/xx</p>
+  </footer>
+  <div class="references_container">
+    <button data-action="open-modal"><span>References</span></button>
+    <div class="references tray-animation" data-active="false" style="background-image: url(../../images/references-bg.png)">
+      <div class="grid">
+        <div class="references_content">
+          <button data-action="close-modal" aria-label="Close references">
+            <span data-close class="icon">
+              <svg class="icon__inline-svg">
+                <use xlink:href="#icon-close" role="presentation"></use>
+              </svg>
+            </span>
+          </button>
+          <header class="page_header primary">
+            <h1 class="title">
+              References
+            </h1>
+          </header>      <ol>
+            <li>
+              <span>1</span>
+              Menzies-Gow A et al. Adv Ther. 2018; 35(10): 1485-1496.
+            </li>
+            <li>
+              <span>2</span>
+              Busse WW et al. Lancet Respir Med. 2019; 7(1): 46-59.
+            </li>
+            <li>
+              <span>3</span>
+              Corren J et al. N Engl J Med. 2017; 377: 936-946.
+            </li>
+            <li>
+              <span>4</span>
+              Sastre J et al. World Allergy Organ J. 2016; 9(13): 1-12.
+            </li>
+            <li>
+              <span>5</span>
+              Castillo JR et al. J Allergy Clin Immunol Pract. 2017; 5(4): 918–927.
+            </li>
+            <li>
+              <span>6</span>
+              O’Byrne PM et al. Eur Respir J. 2017; 50: 1-8.
+            </li>
+            <li>
+              <span>7</span>
+              Vogelmeier C. et al. Eur Respir J. 2005; 26(5): 819-828.
+            </li>
+            <li>
+              <span>8</span>
+              Scicchitano R et al. Curr Med Res Opin. 2004; 20(9): 1403-1418.
+            </li>
+            <li>
+              <span>9</span>
+              Bateman ED et al. N Eng J Med. 2018; 378: 1877-1887.
+            </li>
+            <li>
+              <span>10</span>
+              O’Bryne et al. N Eng J Med. 2018; 378: 1865-1876.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <script>
+        let modal = document.querySelector('.references')
         const closeModalButton = modal.querySelector('[data-action="close-modal"]')
         closeModalButton.addEventListener('click', () => {
           modal.dataset.active = false
-        })</script></div><script>let references = document.querySelector('.references')
+        })
+      </script>
+    </div>  <script>
+      let references = document.querySelector('.references')
       const openModalButton = document.querySelector('[data-action="open-modal"]')
       openModalButton.addEventListener('click', () => {
         modal.dataset.active = true
-      })</script></div></div></aside><main class="content"><header class="page_header secondary"><p class="subtitle">Compound:</p><h1 class="title">Tezepelumab<sup>*</sup></h1></header><p>Tezepelumab is a human monoclonal antibody that blocks thymic stromal lymphopoietin (TSLP) from interacting with its receptor.<sup>3</sup></p><p>By blocking TSLP, tezepelumab reduces the initiation and persistence of airway inflammation by interfering with multiple downstream inflammatory pathways, as evidenced by the reduction of a broad spectrum of cytokines (e.g. IL-5, IL-13) and baseline biomarkers (e.g. blood eosinophils).<sup>3</sup></p><article data-slidedeck data-active="false" class="cutaway"><div><header><h3 class="aside_header"><span>Clinical Slide Library</span><div class="icon"><svg class="icon__inline-svg"><use xlink:href="#icon-arrow" role="presentation"></use></svg></div></h3></header><ul class="download_list"><li><button data-download data-href="/uploads/medical-deck.pptx" class="button slidedeck" data-category="slidedeck" data-mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"><span class="icon"><svg class="icon__inline-svg"><use xlink:href="#icon-presentation" role="presentation"></use></svg> </span><span>MEDICAL DECK</span></button></li><li><button data-download data-href="/uploads/navigator.pptx" class="button slidedeck" data-category="slidedeck" data-mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"><span class="icon"><svg class="icon__inline-svg"><use xlink:href="#icon-presentation" role="presentation"></use></svg> </span><span>NAVIGATOR</span></button></li><li><button data-download data-href="/uploads/source.pptx" class="button slidedeck" data-category="slidedeck" data-mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"><span class="icon"><svg class="icon__inline-svg"><use xlink:href="#icon-presentation" role="presentation"></use></svg> </span><span>SOURCE</span></button></li></ul></div></article></main><aside class="sidebar last"><div class="cutaway"><img class="hero" src="../../images/severe-asthma__tezepelumab.jpg" alt="" role="presentation"></div><article data-resource class="border-block"><div><header><h3 class="aside_header"><span>Resources</span><div class="icon"><svg class="icon__inline-svg"><use xlink:href="#icon-arrow" role="presentation"></use></svg></div></h3></header><ul class="download_list"><li><button data-download data-href="/uploads/medical-deck.pptx" class="button resource" data-category="resource" data-mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"><span class="icon"><svg class="icon__inline-svg"><use xlink:href="#icon-presentation" role="presentation"></use></svg> </span><span>MEDICAL DECK</span></button></li></ul></div></article></aside></div><svg style="display: none;" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="logo-az" viewBox="0 0 76 88"><title>Astra Zeneca</title><path d="M62.7,36.2c-6.1-2-21.3-7.3-37.2-9.3C20,26.2,17.8,28,20.1,33c2.2,4.9,8,13,14.1,19.1
+      })
+    </script>
+  </div></div>
+</aside>
+    <main class="content"><header class="page_header secondary">
+  <p class="subtitle">Compound:</p>
+  <h1 class="title">
+    Tezepelumab<sup>*</sup>
+  </h1>
+</header><p>Tezepelumab is a human monoclonal antibody that blocks thymic stromal lymphopoietin (TSLP) from interacting with its receptor.<sup>3</sup></p>
+<p>By blocking TSLP, tezepelumab reduces the initiation and persistence of airway inflammation by interfering with multiple downstream inflammatory pathways, as evidenced by the reduction of a broad spectrum of cytokines (e.g. IL-5, IL-13) and baseline biomarkers (e.g. blood eosinophils).<sup>3</sup></p>
+
+<article data-slidedeck data-active="false" class="cutaway hidden_links_container">
+  <div>
+    <header>
+      <h3 class="aside_header">
+        <span>Clinical Slide Library</span>
+        <div class="icon">
+          <svg class="icon__inline-svg">
+            <use xlink:href="#icon-arrow" role="presentation"></use>
+          </svg>
+        </div>
+      </h3>
+    </header>
+    <ul class="download_list">
+      <li ><button data-download data-href="/uploads/medical-deck.pptx" class="button slidedeck" data-category="slidedeck" data-mime=application/vnd.openxmlformats-officedocument.presentationml.presentation>
+  <span class="icon">
+    <svg class="icon__inline-svg">
+      <use xlink:href="#icon-presentation" role="presentation"></use>
+    </svg>
+  </span>
+  <span>MEDICAL DECK</span>
+</button></li>
+      <li ><button data-download data-href="/uploads/navigator.pptx" class="button slidedeck" data-category="slidedeck" data-mime=application/vnd.openxmlformats-officedocument.presentationml.presentation>
+  <span class="icon">
+    <svg class="icon__inline-svg">
+      <use xlink:href="#icon-presentation" role="presentation"></use>
+    </svg>
+  </span>
+  <span>NAVIGATOR</span>
+</button></li>
+      <li ><button data-download data-href="/uploads/source.pptx" class="button slidedeck" data-category="slidedeck" data-mime=application/vnd.openxmlformats-officedocument.presentationml.presentation>
+  <span class="icon">
+    <svg class="icon__inline-svg">
+      <use xlink:href="#icon-presentation" role="presentation"></use>
+    </svg>
+  </span>
+  <span>SOURCE</span>
+</button></li>
+    </ul>
+  </div>
+</article></main>
+    <aside class="sidebar last"><div class="cutaway">
+  <img class="hero" src="../../images/severe-asthma__tezepelumab.jpg" alt="" role="presentation">
+</div>
+
+
+
+<article data-resource data-active="false" class="border-block hidden_links_container">
+  <div>
+    <header>
+      <h3 class="aside_header">
+        <span>Resources</span>
+        <div class="icon">
+          <svg class="icon__inline-svg">
+            <use xlink:href="#icon-arrow" role="presentation"></use>
+          </svg>
+        </div>
+      </h3>
+    </header>
+    <ul class="download_list">
+      <li ><button data-download data-href="/uploads/medical-deck.pptx" class="button resource" data-category="resource" data-mime=application/vnd.openxmlformats-officedocument.presentationml.presentation>
+  <span class="icon">
+    <svg class="icon__inline-svg">
+      <use xlink:href="#icon-presentation" role="presentation"></use>
+    </svg>
+  </span>
+  <span>MEDICAL DECK</span>
+</button></li>
+      
+    </ul>
+  </div>
+</article></aside>
+  </div>
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+  
+    <symbol id="logo-az" viewBox="0 0 76 88">
+      <title>Astra Zeneca</title>
+      <path d="M62.7,36.2c-6.1-2-21.3-7.3-37.2-9.3C20,26.2,17.8,28,20.1,33c2.2,4.9,8,13,14.1,19.1
   		c6.1,6.1,12.6,7.7,14.7-1.7c0.1-0.3,0.1-0.7,0.2-1c0.5-2.4,0.9-4.8,1.1-6.8c-2.7-1.1-5.7-2.4-8.7-3.6c0.2,2.2,0.4,5.9,0.6,8.8
   		c0,0.4,0,0.7,0,1.1c0.2,4.6-1.5,4.6-4.3,2.7c-3.3-2.2-13.3-14.6-14.4-20.1c-0.1-0.4,0.1-0.4,0.3-0.3c0.1,0,0.2,0.1,0.2,0.1
   		c0,0,0,0,0,0c2.3,0.8,9.8,3.6,17.4,6.7c3.1,1.2,6.1,2.5,8.9,3.6c2.7,1.2,5.1,2.2,6.9,3.1c3.3,1.7,4.6,2.8,3.2,4.1
@@ -17,5 +236,159 @@
   		 M38.4,61.1c-0.8,0.5-1.6,1-2.4,1.5C26.6,57.7,6.5,48.3,4.7,47.4c-1.9-0.9-5.1-2.1-4.7-5.1c0.6-4.1,8.1-13,11.3-16.7
   		C28.7,5.7,36.5-0.5,41.6,0.2c5.5,0.7,8.5,6,8.9,31c-3.1-0.9-6.5-1.8-10.1-2.7c-0.3-3.6-1-9.1-1.3-11c-0.3-2.1-0.8-3-1.7-3.1
   		c-1-0.1-3.6,2.2-5.9,4.4c-1,1-4,3.8-7.3,6.9c-2.7-0.2-4.5,0.4-5.5,1.6c-0.8,1-1,2.4-0.5,4.1c-1.8,1.7-3.3,3.1-4.2,4
-  		c-3.6,3.4-7.4,6.2-7.6,7.6c-0.2,1.1,1.7,2.3,4.3,3.8C17.2,50.4,32.8,58.3,38.4,61.1" fill="#FAB000"/></symbol><symbol id="logo-reframing" viewBox="0 0 414 196"><title>AZ Reframing Respiratory Care</title><path d="M48.9,52c-0.5-2.7-0.7-5.7-0.7-8.9c0-2.2-0.3-4-0.8-5.5c-0.5-1.5-1.2-2.6-2.1-3.6c-0.8-0.9-1.7-1.6-2.7-2 c-1-0.4-1.9-0.7-2.7-0.8v-0.2c0.5-0.2,1.2-0.5,2.2-0.9c1-0.5,2-1.2,3.1-2.3c1-1.1,2-2.5,2.7-4.2c0.8-1.7,1.2-3.9,1.2-6.6 c0-4.7-1.5-8.4-4.6-11.1c-3.1-2.7-7.7-4-13.8-4H4v55.8h9.8v-23h14.4c2.2,0,4.1,0.3,5.5,0.9c1.4,0.6,2.6,1.5,3.4,2.7 c0.8,1.2,1.4,2.8,1.7,4.6c0.3,1.8,0.5,4,0.5,6.6c0,1.4,0.1,2.8,0.2,4.2c0.1,1.5,0.6,2.8,1.3,4h10.5C50.1,56.5,49.4,54.6,48.9,52z M36.9,25.1c-1.6,1.5-4,2.2-7.1,2.2h-16V9.9h15.9c1.2,0,2.5,0.1,3.6,0.3c1.2,0.2,2.2,0.6,3.1,1.2c0.9,0.6,1.6,1.5,2.1,2.6 c0.5,1.1,0.8,2.6,0.8,4.3C39.3,21.4,38.5,23.6,36.9,25.1z"/><path d="M150.8,116.1c-0.5-2.7-0.7-5.7-0.7-8.9c0-2.2-0.3-4-0.8-5.5c-0.5-1.5-1.2-2.6-2.1-3.6c-0.8-0.9-1.7-1.6-2.7-2 c-1-0.4-1.9-0.7-2.7-0.8v-0.2c0.5-0.2,1.2-0.5,2.2-0.9c1-0.5,2-1.2,3.1-2.3c1-1.1,2-2.5,2.7-4.2c0.8-1.7,1.2-3.9,1.2-6.6 c0-4.7-1.5-8.4-4.6-11.1c-3.1-2.7-7.7-4-13.8-4H106v55.8h9.8v-23h14.4c2.2,0,4.1,0.3,5.5,0.9c1.4,0.6,2.6,1.5,3.4,2.7 c0.8,1.2,1.4,2.8,1.7,4.6c0.3,1.8,0.5,4,0.5,6.6c0,1.4,0.1,2.8,0.2,4.2c0.1,1.5,0.6,2.8,1.3,4h10.5 C152.1,120.7,151.3,118.8,150.8,116.1z M138.8,89.3c-1.6,1.5-4,2.2-7.1,2.2h-16V74.1h15.9c1.2,0,2.5,0.1,3.6,0.3 c1.2,0.2,2.2,0.6,3.1,1.2c0.9,0.6,1.6,1.5,2.1,2.6c0.5,1.1,0.8,2.6,0.8,4.3C141.3,85.5,140.5,87.8,138.8,89.3z"/><path d="M186.2,66.1h-10.4l-21.4,55.8h10.1l5.2-14.8H192l5.2,14.8h10.5L186.2,66.1z M172.4,99.7l8.4-24h0.2l8.4,24H172.4z"/><polygon points="212.9,66.1 226.6,66.1 242,109.8 242.2,109.8 257.2,66.1 270.7,66.1 270.7,121.9 261.5,121.9 261.5,78.8 261.3,78.8 245.8,121.9 237.8,121.9 222.3,78.8 222.2,78.8 222.2,121.9 212.9,121.9 "/><rect x="282.5" y="66.1" width="9.8" height="55.8"/><polygon points="349,1.9 59,1.9 59,57.7 99.7,57.7 99.7,49.3 68.7,49.3 68.7,32.9 96.9,32.9 96.9,25 68.7,25 68.7,10.4 339.7,10.4 339.7,107.2 339.6,107.2 314.1,66.1 303.8,66.1 303.8,121.9 313.1,121.9 313.1,80.9 313.3,80.9 338.7,121.9 349,121.9 349,10.4 349,10.4 "/><path d="M409.2,121.9H403l-1.5-6.6c-2.6,3-5.2,5-7.8,6.2c-2.6,1.1-5.6,1.7-9,1.7c-4.2,0-7.9-0.8-11.2-2.3c-3.3-1.5-6.1-3.6-8.4-6.3 c-2.3-2.7-4-5.8-5.3-9.3c-1.2-3.5-1.8-7.3-1.8-11.3c0-4,0.6-7.7,1.8-11.2c1.2-3.5,3-6.6,5.3-9.3c2.3-2.7,5.1-4.8,8.4-6.3 c3.3-1.6,7-2.3,11.2-2.3c3,0,5.9,0.4,8.6,1.2c2.7,0.8,5.2,2,7.3,3.6c2.1,1.6,3.9,3.6,5.3,6c1.4,2.4,2.3,5.2,2.7,8.3h-9.5 c-0.3-1.8-0.8-3.4-1.7-4.8c-0.9-1.4-1.9-2.5-3.2-3.5c-1.3-0.9-2.8-1.6-4.4-2.1c-1.6-0.5-3.3-0.7-5.1-0.7c-3,0-5.5,0.6-7.7,1.8 c-2.2,1.2-3.9,2.8-5.3,4.8c-1.4,2-2.4,4.3-3,6.8c-0.7,2.6-1,5.2-1,7.8c0,2.7,0.3,5.3,1,7.8c0.7,2.6,1.7,4.8,3,6.8 c1.4,2,3.1,3.6,5.3,4.8c2.2,1.2,4.7,1.8,7.7,1.8c2.5,0.1,4.7-0.3,6.6-1c1.9-0.7,3.6-1.7,4.9-3c1.3-1.3,2.3-3,3-4.9 c0.7-1.9,1-4.1,1.1-6.4h-14.8v-7.4h23.7V121.9z"/><path d="M106.8,164.3l-2.7-9.2c2-0.4,3.6-1.3,4.6-2.6c1.1-1.3,1.6-2.9,1.6-4.7c0-0.8-0.1-1.5-0.4-2.1c-0.2-0.7-0.6-1.2-1.1-1.7 c-0.5-0.5-1.1-0.9-2-1.2c-0.8-0.3-1.8-0.4-2.9-0.4h-9.8c0,0.1-0.1,0.2-0.2,0.4c-0.1,0.2-0.1,0.5-0.1,0.7v0.2c0,0.1,0,0.2,0,0.3h2.4 l-4.1,20.3h-2.4c0,0.1-0.1,0.2-0.2,0.4c-0.1,0.2-0.1,0.5-0.1,0.7v0.2c0,0.1,0,0.2,0,0.3h7.3c0-0.1,0.1-0.2,0.2-0.4 c0.1-0.2,0.1-0.5,0.1-0.7v-0.2c0-0.1,0-0.2,0-0.3h-2.8l1.8-9.1h5.9l2.9,10.6h3.8c0-0.1,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.5,0.1-0.7 v-0.2c0-0.1,0-0.2,0-0.3H106.8z M101.8,153.5h-5.4l1.9-9.4h5c1.7,0,2.9,0.3,3.6,1c0.7,0.6,1.1,1.6,1.1,2.8c0,0.8-0.1,1.5-0.3,2.2 c-0.2,0.7-0.6,1.3-1.1,1.8c-0.5,0.5-1.2,0.9-1.9,1.2C103.9,153.4,102.9,153.5,101.8,153.5z"/><path d="M123.5,150.2c-0.8-0.8-1.9-1.1-3.5-1.1c-1.1,0-2,0.2-2.9,0.5c-0.8,0.4-1.6,0.8-2.3,1.4c-0.7,0.6-1.2,1.2-1.7,2 c-0.5,0.7-0.8,1.5-1.1,2.3c-0.3,0.8-0.5,1.5-0.6,2.3c-0.1,0.8-0.2,1.4-0.2,2c0,1,0.1,1.9,0.4,2.8c0.2,0.8,0.6,1.6,1.1,2.1 c0.5,0.6,1.1,1,1.9,1.4s1.6,0.5,2.7,0.5c1.1,0,2-0.1,2.9-0.4c0.9-0.3,1.6-0.6,2.2-1l0.4-2.3c-0.3,0.2-0.6,0.4-0.9,0.7 c-0.3,0.2-0.7,0.5-1.1,0.6c-0.4,0.2-0.9,0.4-1.4,0.5c-0.5,0.1-1,0.2-1.6,0.2c-0.8,0-1.4-0.1-2-0.4c-0.5-0.3-1-0.6-1.3-1 c-0.3-0.4-0.6-1-0.7-1.6c-0.2-0.6-0.2-1.3-0.2-2v-0.4c0-0.1,0-0.2,0-0.5h0.9c1.9,0,3.5-0.2,4.8-0.5c1.3-0.3,2.4-0.7,3.2-1.2 c0.8-0.5,1.4-1.1,1.8-1.8c0.4-0.7,0.6-1.4,0.6-2.2C124.6,151.9,124.3,151,123.5,150.2z M120.5,156.2c-1.4,0.7-3.6,1.1-6.4,1.1h-0.6 c0.1-0.7,0.4-1.5,0.7-2.3c0.3-0.8,0.8-1.5,1.3-2.2c0.5-0.7,1.1-1.2,1.9-1.6c0.7-0.4,1.5-0.6,2.5-0.6c0.9,0,1.7,0.2,2.1,0.6 c0.5,0.4,0.7,1.1,0.7,1.9C122.7,154.4,122,155.5,120.5,156.2z"/><path d="M126.4,160c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.4,0c0.3,0,0.6,0,0.8,0.1c0,0.2-0.1,0.5-0.1,0.8c-0.1,0.3-0.1,0.6-0.1,0.7 c0,0.5,0.1,1,0.3,1.4c0.2,0.4,0.5,0.7,0.9,1c0.4,0.3,0.8,0.5,1.4,0.6c0.5,0.1,1.1,0.2,1.7,0.2c1.1,0,2.1-0.3,2.9-0.8 c0.8-0.5,1.1-1.3,1.1-2.4c0-0.8-0.2-1.3-0.7-1.8c-0.5-0.4-1.1-0.8-2-1l-2.5-0.8c-2.1-0.7-3.1-1.9-3.1-3.7c0-0.7,0.1-1.3,0.4-1.9 c0.3-0.6,0.6-1.1,1.1-1.6c0.5-0.5,1.1-0.8,1.8-1.1c0.7-0.3,1.5-0.4,2.3-0.4c1.3,0,2.3,0.2,3,0.6c0.7,0.4,1.2,0.9,1.4,1.5l0.3-1.7 c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.4,0c0.3,0,0.6,0,0.8,0.1l-1.1,5.4c-0.2,0.1-0.5,0.1-0.8,0.1c-0.1,0-0.2,0-0.4,0 c-0.2,0-0.3-0.1-0.4-0.1c0.1-0.5,0.2-1,0.2-1.5c0-0.8-0.3-1.4-0.9-2c-0.6-0.6-1.6-0.8-2.9-0.8c-1.2,0-2.1,0.3-2.8,0.9 c-0.7,0.6-1,1.4-1,2.3c0,0.7,0.2,1.2,0.7,1.5c0.5,0.3,1.1,0.6,1.8,0.8l2.4,0.7c1.3,0.4,2.3,0.9,2.8,1.6c0.5,0.7,0.8,1.5,0.8,2.5 c0,0.8-0.1,1.5-0.4,2.1c-0.3,0.6-0.7,1.2-1.2,1.7c-0.5,0.5-1.1,0.8-1.9,1.1c-0.7,0.3-1.6,0.4-2.5,0.4c-1.2,0-2.3-0.2-3.2-0.6 c-0.9-0.4-1.5-1-1.8-1.7l-0.4,1.8c-0.1,0-0.2,0.1-0.3,0.1c-0.1,0-0.2,0-0.4,0c-0.3,0-0.6,0-0.8-0.1L126.4,160z"/><path d="M156.5,152.8c-0.2-0.7-0.4-1.3-0.8-1.9c-0.4-0.6-0.9-1-1.5-1.4c-0.6-0.3-1.4-0.5-2.4-0.5c-1.3,0-2.4,0.4-3.5,1.1 c-1,0.7-1.8,1.6-2.5,2.7l0.7-3.4h-3.9c0,0-0.1,0.2-0.2,0.4c-0.1,0.2-0.1,0.4-0.1,0.7v0.2c0,0.1,0,0.2,0,0.2h2.1l-3.8,18.8h-2.2 c0,0-0.1,0.2-0.2,0.4c-0.1,0.2-0.1,0.4-0.1,0.7v0.2c0,0.1,0,0.2,0,0.2h6.5c0,0,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.4,0.1-0.7v-0.2 c0-0.1,0-0.2,0-0.2h-2.4l1.3-6.5c0.1,0.4,0.3,0.8,0.5,1.1c0.2,0.4,0.5,0.7,0.9,1c0.4,0.3,0.8,0.5,1.3,0.7c0.5,0.2,1,0.3,1.6,0.3 c2,0,3.7-0.8,5.1-2.3c0.5-0.5,0.9-1.2,1.3-1.9c0.4-0.7,0.7-1.4,1-2.2c0.3-0.8,0.5-1.6,0.6-2.5c0.1-0.8,0.2-1.7,0.2-2.5 C156.8,154.3,156.7,153.5,156.5,152.8z M154.3,158.4c-0.2,1.1-0.6,2.1-1.1,3c-0.5,0.9-1.1,1.7-1.9,2.3c-0.8,0.6-1.7,0.9-2.7,0.9 c-1.2,0-2.1-0.4-2.7-1.2c-0.6-0.8-1-1.8-1-3.1c0-0.8,0.1-1.5,0.3-2.3c0.2-1.1,0.5-2,1-2.9c0.4-0.9,0.9-1.6,1.5-2.3 c0.6-0.6,1.2-1.1,1.8-1.5c0.6-0.4,1.3-0.5,2-0.5s1.2,0.1,1.6,0.4c0.4,0.3,0.8,0.6,1,1.1c0.2,0.4,0.4,0.9,0.5,1.5 c0.1,0.5,0.1,1.1,0.1,1.6C154.6,156.3,154.5,157.3,154.3,158.4z"/><path d="M162.5,151h-2.1c0-0.1,0-0.1,0-0.2v-0.2c0-0.2,0-0.5,0.1-0.7c0.1-0.2,0.1-0.3,0.2-0.4h4.2l-3,14.9h2.1c0,0.1,0,0.1,0,0.2 v0.2c0,0.2,0,0.5-0.1,0.7c-0.1,0.2-0.1,0.3-0.2,0.4h-4.2L162.5,151z"/><path d="M164.4,145.8c-0.4,0-0.7-0.1-1-0.4c-0.2-0.3-0.4-0.6-0.4-1.1c0-0.5,0.1-0.9,0.4-1.3c0.3-0.3,0.6-0.5,1-0.5 c0.4,0,0.7,0.1,0.9,0.4c0.2,0.3,0.4,0.7,0.4,1.1c0,0.5-0.1,0.9-0.4,1.2C165.1,145.6,164.8,145.8,164.4,145.8"/><path d="M170.9,151h-2.1c0-0.1,0-0.1,0-0.2v-0.2c0-0.2,0-0.5,0.1-0.7c0.1-0.2,0.1-0.3,0.2-0.4h3.9l-0.8,3.8c0.2-0.4,0.5-0.9,0.8-1.3 c0.3-0.5,0.7-0.9,1.2-1.2c0.4-0.4,0.9-0.7,1.4-0.9c0.5-0.2,1-0.4,1.6-0.4c0.4,0,0.8,0,1.1,0.1c0.3,0.1,0.5,0.2,0.6,0.3l-0.7,1.9 c-0.1-0.1-0.3-0.1-0.5-0.2c-0.2-0.1-0.5-0.1-0.9-0.1c-0.5,0-1,0.1-1.5,0.4c-0.5,0.3-1.1,0.7-1.6,1.3c-0.5,0.6-1,1.4-1.4,2.3 c-0.4,0.9-0.8,2.1-1,3.4l-1.4,7h-2L170.9,151z"/><path d="M190.4,164.4l3-14.9h-1.4l-1.2,2.1c-0.2-0.5-0.4-0.9-0.7-1.2c-0.3-0.3-0.6-0.6-1-0.8c-0.4-0.2-0.7-0.3-1.1-0.4 c-0.4-0.1-0.8-0.1-1.2-0.1c-0.9,0-1.8,0.2-2.7,0.5c-0.9,0.4-1.7,0.9-2.4,1.7c-1,1.1-1.9,2.3-2.5,3.9c-0.6,1.5-1,3.2-1,5.1 c0,0.6,0.1,1.3,0.2,2c0.1,0.7,0.4,1.4,0.7,2c0.4,0.6,0.8,1.1,1.5,1.5c0.6,0.4,1.4,0.6,2.4,0.6c1.3,0,2.4-0.3,3.4-1 c1-0.7,1.8-1.6,2.5-2.8l-0.7,3.4h4c0,0,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.4,0.1-0.7v-0.2c0-0.1,0-0.2,0-0.2H190.4z M190.1,156.1 c-0.1,0.5-0.1,0.9-0.2,1.3c-0.3,1.2-0.6,2.2-1.1,3.1c-0.5,0.9-1,1.7-1.5,2.3c-0.6,0.6-1.2,1.1-1.8,1.4c-0.6,0.3-1.2,0.5-1.8,0.5 c-0.7,0-1.3-0.2-1.7-0.5c-0.4-0.3-0.8-0.7-1-1.2c-0.2-0.5-0.4-1-0.5-1.5c-0.1-0.6-0.1-1.1-0.1-1.5c0-0.9,0.1-1.9,0.4-2.9 c0.3-1.1,0.7-2.1,1.2-3c0.5-0.9,1.2-1.7,2-2.3c0.8-0.6,1.7-0.9,2.8-0.9c0.6,0,1.1,0.1,1.5,0.3c0.4,0.2,0.7,0.5,1,0.9 c0.3,0.4,0.5,0.8,0.6,1.3c0.1,0.5,0.2,1,0.2,1.6C190.2,155.2,190.2,155.6,190.1,156.1z"/><path d="M199.2,151.2h-2.3c0-0.1,0-0.2,0-0.3v-0.2c0-0.2,0-0.5,0.1-0.7c0.1-0.2,0.1-0.4,0.2-0.4h2.4l0.9-4.3l2.3-1.2l-1.1,5.4h3.6 c0,0.1,0,0.2,0,0.3v0.2c0,0.2,0,0.5-0.1,0.7c-0.1,0.2-0.1,0.4-0.2,0.4h-3.7l-2.1,10.4c-0.1,0.5-0.2,1-0.2,1.4c0,0.4,0.1,0.8,0.4,1 c0.3,0.3,0.7,0.4,1.3,0.4c0.8,0,1.5-0.2,2.2-0.5l-0.3,1.7c-0.3,0.1-0.6,0.2-1,0.3c-0.4,0.1-0.9,0.1-1.3,0.1c-1,0-1.7-0.3-2.3-0.8 c-0.6-0.5-0.9-1.3-0.9-2.3c0-0.3,0-0.6,0.1-1c0-0.3,0.1-0.7,0.2-1L199.2,151.2z"/><path d="M219.6,153.2c-0.2-0.7-0.5-1.4-1-2c-0.5-0.6-1.1-1.1-1.8-1.5c-0.8-0.4-1.7-0.6-2.8-0.6c-1.4,0-2.7,0.3-3.7,1 c-1.1,0.7-2,1.5-2.7,2.6c-0.7,1-1.3,2.2-1.6,3.5c-0.4,1.3-0.5,2.5-0.5,3.7c0,0.9,0.1,1.7,0.4,2.5c0.3,0.8,0.6,1.5,1.1,2 c0.5,0.6,1.1,1,1.9,1.4c0.7,0.3,1.6,0.5,2.6,0.5c1.4,0,2.6-0.3,3.6-1c1.1-0.6,2-1.5,2.7-2.5c0.7-1,1.3-2.2,1.7-3.5 c0.4-1.3,0.6-2.6,0.6-4C219.9,154.7,219.8,153.9,219.6,153.2z M217.5,158.3c-0.2,1-0.6,2-1.1,3c-0.5,0.9-1.1,1.7-1.9,2.4 c-0.8,0.7-1.8,1-2.9,1c-0.8,0-1.4-0.1-1.9-0.4c-0.5-0.3-1-0.6-1.3-1.1c-0.3-0.5-0.6-1-0.7-1.6c-0.2-0.6-0.2-1.2-0.2-1.9 c0-0.5,0-1,0.1-1.7c0.1-0.6,0.2-1.3,0.5-1.9c0.2-0.7,0.5-1.3,0.8-2c0.3-0.6,0.7-1.2,1.2-1.7c0.5-0.5,1-0.9,1.6-1.2 c0.6-0.3,1.3-0.5,2.1-0.5c0.8,0,1.5,0.2,2,0.5c0.5,0.3,0.9,0.7,1.3,1.2c0.3,0.5,0.5,1,0.6,1.6c0.1,0.6,0.2,1.1,0.2,1.7 C217.8,156.4,217.7,157.3,217.5,158.3z"/><path d="M225.4,151h-2.1c0-0.1,0-0.1,0-0.2v-0.2c0-0.2,0-0.5,0.1-0.7c0.1-0.2,0.1-0.3,0.2-0.4h3.9l-0.8,3.8c0.2-0.4,0.5-0.9,0.8-1.3 c0.3-0.5,0.7-0.9,1.2-1.2c0.4-0.4,0.9-0.7,1.4-0.9c0.5-0.2,1-0.4,1.6-0.4c0.4,0,0.8,0,1.1,0.1c0.3,0.1,0.5,0.2,0.6,0.3l-0.7,1.9 c-0.1-0.1-0.3-0.1-0.5-0.2c-0.2-0.1-0.5-0.1-0.9-0.1c-0.5,0-1,0.1-1.5,0.4c-0.5,0.3-1.1,0.7-1.6,1.3c-0.5,0.6-1,1.4-1.4,2.3 c-0.4,0.9-0.8,2.1-1,3.4l-1.4,7h-2L225.4,151z"/><path d="M232.4,169.5c0.4,0.2,0.7,0.3,1.1,0.4c0.3,0.1,0.7,0.1,1.1,0.1c0.8,0,1.7-0.4,2.7-1.2c1-0.8,2-1.9,3-3.3 c-0.3-1.1-0.6-2.3-0.9-3.6c-0.3-1.3-0.7-2.5-1-3.8c-0.4-1.3-0.7-2.5-1.1-3.7c-0.4-1.2-0.7-2.3-1.1-3.3H234c0-0.1,0-0.1,0-0.2v-0.2 c0-0.2,0-0.5,0.1-0.7c0.1-0.2,0.1-0.3,0.2-0.4h3.5c0.2,0.6,0.5,1.5,0.9,2.6c0.3,1.1,0.7,2.3,1.1,3.5c0.4,1.3,0.7,2.6,1.1,3.9 c0.4,1.3,0.7,2.6,1,3.8c0.6-1,1.2-2,1.8-3.1c0.6-1.1,1-2.1,1.4-3.1c0.4-1,0.7-1.9,1-2.8c0.2-0.8,0.4-1.6,0.4-2.1c0-0.3,0-0.5,0-0.7 c0-0.2,0-0.3-0.1-0.5h-2.2c0-0.1,0-0.1,0-0.2v-0.2c0-0.2,0-0.5,0.1-0.7c0.1-0.2,0.1-0.3,0.2-0.4h3.8c0.1,0.2,0.2,0.5,0.3,0.9 c0.1,0.4,0.1,0.7,0.1,1.1c0,1.1-0.2,2.3-0.7,3.7c-0.5,1.4-1.1,2.8-1.8,4.3c-0.7,1.5-1.5,2.9-2.5,4.3c-0.9,1.4-1.8,2.6-2.6,3.7 c-1.2,1.4-2.2,2.5-3.3,3.2c-1,0.7-2.1,1-3.4,1c-0.4,0-0.8,0-1.2-0.1c-0.4-0.1-0.7-0.2-0.9-0.3L232.4,169.5z"/><path d="M275.5,164.3c-0.3,0.2-0.7,0.4-1.1,0.7c-0.5,0.2-1,0.5-1.7,0.7c-0.6,0.2-1.3,0.4-2.1,0.5c-0.8,0.2-1.6,0.2-2.4,0.2 c-1.7,0-3.1-0.3-4.2-0.9c-1.1-0.6-2-1.3-2.7-2.3c-0.7-0.9-1.2-1.9-1.4-3.1c-0.3-1.1-0.4-2.2-0.4-3.3c0-2,0.3-3.9,0.9-5.7 c0.6-1.8,1.4-3.4,2.5-4.8c1.1-1.4,2.4-2.5,3.9-3.4c1.5-0.8,3.1-1.3,4.9-1.3c1.3,0,2.5,0.3,3.6,0.8c1.1,0.5,1.8,1.3,2.3,2.3l0.5-2.5 c0.2-0.1,0.5-0.1,0.8-0.1c0.2,0,0.4,0,0.5,0c0.2,0,0.3,0.1,0.4,0.1l-1.7,8.7c-0.1,0-0.2,0.1-0.4,0.1c-0.1,0-0.3,0-0.5,0 c-0.2,0-0.4,0-0.6,0c-0.2,0-0.3-0.1-0.4-0.1l0.2-1.1c0.1-0.6,0.2-1.3,0.2-1.9c0-0.6-0.1-1.2-0.3-1.8c-0.2-0.5-0.5-1-0.9-1.4 c-0.4-0.4-0.9-0.7-1.5-1c-0.6-0.2-1.4-0.3-2.3-0.3c-1.5,0-2.8,0.4-4.1,1.1c-1.2,0.7-2.3,1.7-3.1,3c-0.9,1.2-1.5,2.6-2,4.2 c-0.5,1.6-0.7,3.2-0.7,4.9c0,1,0.1,2,0.4,3c0.3,0.9,0.7,1.8,1.2,2.5c0.5,0.7,1.2,1.3,2.1,1.7c0.8,0.4,1.9,0.6,3,0.6 c0.8,0,1.6-0.1,2.3-0.3c0.7-0.2,1.4-0.4,2.1-0.7c0.6-0.3,1.2-0.6,1.8-1c0.5-0.4,1-0.7,1.4-1.1L275.5,164.3z"/><path d="M291.9,164.4l3-14.9h-1.4l-1.2,2.1c-0.2-0.5-0.4-0.9-0.7-1.2c-0.3-0.3-0.6-0.6-1-0.8c-0.4-0.2-0.7-0.3-1.1-0.4 c-0.4-0.1-0.8-0.1-1.2-0.1c-0.9,0-1.8,0.2-2.7,0.5c-0.9,0.4-1.7,0.9-2.4,1.7c-1,1.1-1.9,2.3-2.5,3.9c-0.6,1.5-1,3.2-1,5.1 c0,0.6,0.1,1.3,0.2,2c0.1,0.7,0.4,1.4,0.7,2c0.4,0.6,0.8,1.1,1.5,1.5c0.6,0.4,1.4,0.6,2.4,0.6c1.3,0,2.4-0.3,3.4-1 c1-0.7,1.8-1.6,2.5-2.8l-0.7,3.4h4c0,0,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.4,0.1-0.7v-0.2c0-0.1,0-0.2,0-0.2H291.9z M291.6,156.1 c-0.1,0.5-0.1,0.9-0.2,1.3c-0.3,1.2-0.6,2.2-1.1,3.1c-0.5,0.9-1,1.7-1.5,2.3c-0.6,0.6-1.2,1.1-1.8,1.4c-0.6,0.3-1.2,0.5-1.8,0.5 c-0.7,0-1.3-0.2-1.7-0.5c-0.4-0.3-0.8-0.7-1-1.2c-0.2-0.5-0.4-1-0.5-1.5c-0.1-0.6-0.1-1.1-0.1-1.5c0-0.9,0.1-1.9,0.4-2.9 c0.3-1.1,0.7-2.1,1.2-3c0.5-0.9,1.2-1.7,2-2.3c0.8-0.6,1.7-0.9,2.8-0.9c0.6,0,1.1,0.1,1.5,0.3c0.4,0.2,0.7,0.5,1,0.9 c0.3,0.4,0.5,0.8,0.6,1.3c0.1,0.5,0.2,1,0.2,1.6C291.7,155.2,291.7,155.6,291.6,156.1z"/><path d="M300.8,151h-2.1c0-0.1,0-0.1,0-0.2v-0.2c0-0.2,0-0.5,0.1-0.7c0.1-0.2,0.1-0.3,0.2-0.4h3.9l-0.8,3.8c0.2-0.4,0.5-0.9,0.8-1.3 c0.3-0.5,0.7-0.9,1.2-1.2c0.4-0.4,0.9-0.7,1.4-0.9c0.5-0.2,1-0.4,1.6-0.4c0.4,0,0.8,0,1.1,0.1c0.3,0.1,0.5,0.2,0.6,0.3l-0.7,1.9 c-0.1-0.1-0.3-0.1-0.5-0.2c-0.2-0.1-0.5-0.1-0.9-0.1c-0.5,0-1,0.1-1.5,0.4c-0.5,0.3-1.1,0.7-1.6,1.3c-0.5,0.6-1,1.4-1.4,2.3 c-0.4,0.9-0.8,2.1-1,3.4l-1.4,7h-2L300.8,151z"/><path d="M320.4,150.2c-0.8-0.8-1.9-1.1-3.5-1.1c-1.1,0-2,0.2-2.9,0.5c-0.9,0.4-1.6,0.8-2.3,1.4c-0.7,0.6-1.2,1.2-1.7,2 c-0.5,0.7-0.8,1.5-1.1,2.3c-0.3,0.8-0.5,1.5-0.6,2.3c-0.1,0.8-0.2,1.4-0.2,2c0,1,0.1,1.9,0.4,2.8c0.2,0.8,0.6,1.6,1.1,2.1 c0.5,0.6,1.1,1,1.9,1.4c0.7,0.3,1.6,0.5,2.7,0.5c1.1,0,2-0.1,2.9-0.4c0.9-0.3,1.6-0.6,2.2-1l0.4-2.3c-0.3,0.2-0.6,0.4-0.9,0.7 c-0.3,0.2-0.7,0.5-1.1,0.6c-0.4,0.2-0.9,0.4-1.4,0.5c-0.5,0.1-1,0.2-1.6,0.2c-0.8,0-1.4-0.1-2-0.4c-0.5-0.3-1-0.6-1.3-1 c-0.3-0.4-0.6-1-0.7-1.6c-0.2-0.6-0.2-1.3-0.2-2v-0.4c0-0.1,0-0.2,0-0.5h0.9c1.9,0,3.5-0.2,4.8-0.5c1.3-0.3,2.4-0.7,3.2-1.2 c0.8-0.5,1.4-1.1,1.8-1.8c0.4-0.7,0.6-1.4,0.6-2.2C321.5,151.9,321.2,151,320.4,150.2z M317.5,156.2c-1.4,0.7-3.6,1.1-6.4,1.1h-0.6 c0.1-0.7,0.4-1.5,0.7-2.3c0.3-0.8,0.8-1.5,1.3-2.2c0.5-0.7,1.1-1.2,1.9-1.6c0.7-0.4,1.5-0.6,2.5-0.6c0.9,0,1.7,0.2,2.1,0.6 c0.5,0.4,0.7,1.1,0.7,1.9C319.6,154.4,318.9,155.5,317.5,156.2z"/><polygon points="349,185.6 349,128.3 339.7,128.3 339.7,185.6 69.4,185.6 69.4,97.1 94.6,97.1 94.6,89.1 69.4,89.1 69.4,74.5 98.2,74.5 98.2,66.1 59.7,66.1 59.7,190.1 59.7,190.1 59.7,194 349,194 349,185.6 "/></symbol><symbol id="icon-nav" viewBox="0 0 500 414.1"><title>Navigation</title><path d="M0,0h500v70.3H0V0z M0,171.9h500v70.3H0V171.9z M0,343.8h500v70.3H0V343.8z M0,0h500v70.3H0V0z"/></symbol><symbol id="icon-close" viewBox="0 0 52 52"><title>Close</title><path d="M2913,4529.31l45.59-45.31,6.41,6.37-45.59,45.32Zm6.55-44.62,45.26,44.98-6.36,6.33-45.26-44.99Z" transform="translate(-2913 -4484)"/></symbol><symbol id="icon-arrow" viewBox="0 0 500 500"><title>Arrow</title><path d="M108,83.7L108,83.7L108,83.7L108,83.7z M108,83.7l125,160.2L109.1,421.8L214.1,495L392,239.7L209,5L108,83.7z"/></symbol><symbol id="icon-document" viewBox="0 0 500 500"><title>Document</title><path d="M140.1,295.7h227.3v43.4H140.1V295.7z M140.1,190.7h227.3v43.4H140.1V190.7z M140.1,85.8h227.3v43.4H140.1V85.8z M70,493 h358.2V9H70V493z"/></symbol><symbol id="icon-spreadsheet" viewBox="0 0 500 500"><title>Spreadsheet</title><path d="M140.1,295.7h227.3v43.4H140.1V295.7z M140.1,190.7h227.3v43.4H140.1V190.7z M140.1,85.8h227.3v43.4H140.1V85.8z M70,493 h358.2V9H70V493z"/></symbol><symbol id="icon-presentation" viewBox="0 0 500 500"><title>Presentation</title><rect x="8" y="120.6" width="411" height="335"/><polygon points="491,398.2 453.2,398.2 453.2,82.1 61.1,82.1 61.1,44.3 491,44.3"/></symbol><symbol id="icon-pdf" viewBox="0 0 500 500"><title>PDF</title><path d="M379.1,135.7l34.7,34.7L189.8,394.5L86.8,291.6l34.7-34.7l68.2,68.2L379.1,135.7z M10.7,495.6H490V5H10.7V495.6z"/></symbol></svg><script src="../../cordova.js"></script><script>/* Lockr - Tracker.js dependency - https://github.com/tsironis/lockr */
-    !function (e, t) { "undefined" != typeof exports ? "undefined" != typeof module && module.exports && (exports = module.exports = t(e, exports)) : "function" == typeof define && define.amd ? define(["exports"], function (r) { e.Lockr = t(e, r) }) : e.Lockr = t(e, {}) }(this, function (e, t) { "use strict"; return Array.prototype.indexOf || (Array.prototype.indexOf = function (e) { var t = this.length >>> 0, r = Number(arguments[1]) || 0; for ((r = r < 0 ? Math.ceil(r) : Math.floor(r)) < 0 && (r += t); r < t; r++)if (r in this && this[r] === e) return r; return -1 }), t.prefix = "", t._getPrefixedKey = function (e, t) { return (t = t || {}).noPrefix ? e : this.prefix + e }, t.set = function (e, t, r) { var o = this._getPrefixedKey(e, r); try { localStorage.setItem(o, JSON.stringify({ data: t })) } catch (r) { console && console.warn("Lockr didn't successfully save the '{" + e + ": " + t + "}' pair, because the localStorage is full.") } }, t.get = function (e, t, r) { var o, n = this._getPrefixedKey(e, r); try { o = JSON.parse(localStorage.getItem(n)) } catch (e) { o = localStorage[n] ? { data: localStorage.getItem(n) } : null } return o ? "object" == typeof o && void 0 !== o.data ? o.data : void 0 : t }, t.sadd = function (e, r, o) { var n, a = this._getPrefixedKey(e, o), i = t.smembers(e); if (i.indexOf(r) > -1) return null; try { i.push(r), n = JSON.stringify({ data: i }), localStorage.setItem(a, n) } catch (t) { console.log(t), console && console.warn("Lockr didn't successfully add the " + r + " to " + e + " set, because the localStorage is full.") } }, t.smembers = function (e, t) { var r, o = this._getPrefixedKey(e, t); try { r = JSON.parse(localStorage.getItem(o)) } catch (e) { r = null } return r && r.data ? r.data : [] }, t.sismember = function (e, r, o) { return t.smembers(e).indexOf(r) > -1 }, t.keys = function () { var e = [], r = Object.keys(localStorage); return 0 === t.prefix.length ? r : (r.forEach(function (r) { -1 !== r.indexOf(t.prefix) && e.push(r.replace(t.prefix, "")) }), e) }, t.getAll = function (e) { var r = t.keys(); return e ? r.reduce(function (e, r) { var o = {}; return o[r] = t.get(r), e.push(o), e }, []) : r.map(function (e) { return t.get(e) }) }, t.srem = function (e, r, o) { var n, a, i = this._getPrefixedKey(e, o), c = t.smembers(e, r); (a = c.indexOf(r)) > -1 && c.splice(a, 1), n = JSON.stringify({ data: c }); try { localStorage.setItem(i, n) } catch (t) { console && console.warn("Lockr couldn't remove the " + r + " from the set " + e) } }, t.rm = function (e) { var t = this._getPrefixedKey(e); localStorage.removeItem(t) }, t.flush = function () { t.prefix.length ? t.keys().forEach(function (e) { localStorage.removeItem(t._getPrefixedKey(e)) }) : localStorage.clear() }, t });</script><script src="../../js/main.js"></script></body></html>
+  		c-3.6,3.4-7.4,6.2-7.6,7.6c-0.2,1.1,1.7,2.3,4.3,3.8C17.2,50.4,32.8,58.3,38.4,61.1" fill="#FAB000" />
+    </symbol>
+  
+    <symbol id="logo-reframing" viewBox="0 0 414 196">
+      <title>AZ Reframing Respiratory Care</title>
+      <path d="M48.9,52c-0.5-2.7-0.7-5.7-0.7-8.9c0-2.2-0.3-4-0.8-5.5c-0.5-1.5-1.2-2.6-2.1-3.6c-0.8-0.9-1.7-1.6-2.7-2 c-1-0.4-1.9-0.7-2.7-0.8v-0.2c0.5-0.2,1.2-0.5,2.2-0.9c1-0.5,2-1.2,3.1-2.3c1-1.1,2-2.5,2.7-4.2c0.8-1.7,1.2-3.9,1.2-6.6 c0-4.7-1.5-8.4-4.6-11.1c-3.1-2.7-7.7-4-13.8-4H4v55.8h9.8v-23h14.4c2.2,0,4.1,0.3,5.5,0.9c1.4,0.6,2.6,1.5,3.4,2.7 c0.8,1.2,1.4,2.8,1.7,4.6c0.3,1.8,0.5,4,0.5,6.6c0,1.4,0.1,2.8,0.2,4.2c0.1,1.5,0.6,2.8,1.3,4h10.5C50.1,56.5,49.4,54.6,48.9,52z M36.9,25.1c-1.6,1.5-4,2.2-7.1,2.2h-16V9.9h15.9c1.2,0,2.5,0.1,3.6,0.3c1.2,0.2,2.2,0.6,3.1,1.2c0.9,0.6,1.6,1.5,2.1,2.6 c0.5,1.1,0.8,2.6,0.8,4.3C39.3,21.4,38.5,23.6,36.9,25.1z" />
+      <path d="M150.8,116.1c-0.5-2.7-0.7-5.7-0.7-8.9c0-2.2-0.3-4-0.8-5.5c-0.5-1.5-1.2-2.6-2.1-3.6c-0.8-0.9-1.7-1.6-2.7-2 c-1-0.4-1.9-0.7-2.7-0.8v-0.2c0.5-0.2,1.2-0.5,2.2-0.9c1-0.5,2-1.2,3.1-2.3c1-1.1,2-2.5,2.7-4.2c0.8-1.7,1.2-3.9,1.2-6.6 c0-4.7-1.5-8.4-4.6-11.1c-3.1-2.7-7.7-4-13.8-4H106v55.8h9.8v-23h14.4c2.2,0,4.1,0.3,5.5,0.9c1.4,0.6,2.6,1.5,3.4,2.7 c0.8,1.2,1.4,2.8,1.7,4.6c0.3,1.8,0.5,4,0.5,6.6c0,1.4,0.1,2.8,0.2,4.2c0.1,1.5,0.6,2.8,1.3,4h10.5 C152.1,120.7,151.3,118.8,150.8,116.1z M138.8,89.3c-1.6,1.5-4,2.2-7.1,2.2h-16V74.1h15.9c1.2,0,2.5,0.1,3.6,0.3 c1.2,0.2,2.2,0.6,3.1,1.2c0.9,0.6,1.6,1.5,2.1,2.6c0.5,1.1,0.8,2.6,0.8,4.3C141.3,85.5,140.5,87.8,138.8,89.3z" />
+      <path d="M186.2,66.1h-10.4l-21.4,55.8h10.1l5.2-14.8H192l5.2,14.8h10.5L186.2,66.1z M172.4,99.7l8.4-24h0.2l8.4,24H172.4z" />
+      <polygon points="212.9,66.1 226.6,66.1 242,109.8 242.2,109.8 257.2,66.1 270.7,66.1 270.7,121.9 261.5,121.9 261.5,78.8 261.3,78.8 245.8,121.9 237.8,121.9 222.3,78.8 222.2,78.8 222.2,121.9 212.9,121.9 " />
+      <rect x="282.5" y="66.1" width="9.8" height="55.8" />
+      <polygon points="349,1.9 59,1.9 59,57.7 99.7,57.7 99.7,49.3 68.7,49.3 68.7,32.9 96.9,32.9 96.9,25 68.7,25 68.7,10.4 339.7,10.4 339.7,107.2 339.6,107.2 314.1,66.1 303.8,66.1 303.8,121.9 313.1,121.9 313.1,80.9 313.3,80.9 338.7,121.9 349,121.9 349,10.4 349,10.4 " />
+      <path d="M409.2,121.9H403l-1.5-6.6c-2.6,3-5.2,5-7.8,6.2c-2.6,1.1-5.6,1.7-9,1.7c-4.2,0-7.9-0.8-11.2-2.3c-3.3-1.5-6.1-3.6-8.4-6.3 c-2.3-2.7-4-5.8-5.3-9.3c-1.2-3.5-1.8-7.3-1.8-11.3c0-4,0.6-7.7,1.8-11.2c1.2-3.5,3-6.6,5.3-9.3c2.3-2.7,5.1-4.8,8.4-6.3 c3.3-1.6,7-2.3,11.2-2.3c3,0,5.9,0.4,8.6,1.2c2.7,0.8,5.2,2,7.3,3.6c2.1,1.6,3.9,3.6,5.3,6c1.4,2.4,2.3,5.2,2.7,8.3h-9.5 c-0.3-1.8-0.8-3.4-1.7-4.8c-0.9-1.4-1.9-2.5-3.2-3.5c-1.3-0.9-2.8-1.6-4.4-2.1c-1.6-0.5-3.3-0.7-5.1-0.7c-3,0-5.5,0.6-7.7,1.8 c-2.2,1.2-3.9,2.8-5.3,4.8c-1.4,2-2.4,4.3-3,6.8c-0.7,2.6-1,5.2-1,7.8c0,2.7,0.3,5.3,1,7.8c0.7,2.6,1.7,4.8,3,6.8 c1.4,2,3.1,3.6,5.3,4.8c2.2,1.2,4.7,1.8,7.7,1.8c2.5,0.1,4.7-0.3,6.6-1c1.9-0.7,3.6-1.7,4.9-3c1.3-1.3,2.3-3,3-4.9 c0.7-1.9,1-4.1,1.1-6.4h-14.8v-7.4h23.7V121.9z" />
+      <path d="M106.8,164.3l-2.7-9.2c2-0.4,3.6-1.3,4.6-2.6c1.1-1.3,1.6-2.9,1.6-4.7c0-0.8-0.1-1.5-0.4-2.1c-0.2-0.7-0.6-1.2-1.1-1.7 c-0.5-0.5-1.1-0.9-2-1.2c-0.8-0.3-1.8-0.4-2.9-0.4h-9.8c0,0.1-0.1,0.2-0.2,0.4c-0.1,0.2-0.1,0.5-0.1,0.7v0.2c0,0.1,0,0.2,0,0.3h2.4 l-4.1,20.3h-2.4c0,0.1-0.1,0.2-0.2,0.4c-0.1,0.2-0.1,0.5-0.1,0.7v0.2c0,0.1,0,0.2,0,0.3h7.3c0-0.1,0.1-0.2,0.2-0.4 c0.1-0.2,0.1-0.5,0.1-0.7v-0.2c0-0.1,0-0.2,0-0.3h-2.8l1.8-9.1h5.9l2.9,10.6h3.8c0-0.1,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.5,0.1-0.7 v-0.2c0-0.1,0-0.2,0-0.3H106.8z M101.8,153.5h-5.4l1.9-9.4h5c1.7,0,2.9,0.3,3.6,1c0.7,0.6,1.1,1.6,1.1,2.8c0,0.8-0.1,1.5-0.3,2.2 c-0.2,0.7-0.6,1.3-1.1,1.8c-0.5,0.5-1.2,0.9-1.9,1.2C103.9,153.4,102.9,153.5,101.8,153.5z" />
+      <path d="M123.5,150.2c-0.8-0.8-1.9-1.1-3.5-1.1c-1.1,0-2,0.2-2.9,0.5c-0.8,0.4-1.6,0.8-2.3,1.4c-0.7,0.6-1.2,1.2-1.7,2 c-0.5,0.7-0.8,1.5-1.1,2.3c-0.3,0.8-0.5,1.5-0.6,2.3c-0.1,0.8-0.2,1.4-0.2,2c0,1,0.1,1.9,0.4,2.8c0.2,0.8,0.6,1.6,1.1,2.1 c0.5,0.6,1.1,1,1.9,1.4s1.6,0.5,2.7,0.5c1.1,0,2-0.1,2.9-0.4c0.9-0.3,1.6-0.6,2.2-1l0.4-2.3c-0.3,0.2-0.6,0.4-0.9,0.7 c-0.3,0.2-0.7,0.5-1.1,0.6c-0.4,0.2-0.9,0.4-1.4,0.5c-0.5,0.1-1,0.2-1.6,0.2c-0.8,0-1.4-0.1-2-0.4c-0.5-0.3-1-0.6-1.3-1 c-0.3-0.4-0.6-1-0.7-1.6c-0.2-0.6-0.2-1.3-0.2-2v-0.4c0-0.1,0-0.2,0-0.5h0.9c1.9,0,3.5-0.2,4.8-0.5c1.3-0.3,2.4-0.7,3.2-1.2 c0.8-0.5,1.4-1.1,1.8-1.8c0.4-0.7,0.6-1.4,0.6-2.2C124.6,151.9,124.3,151,123.5,150.2z M120.5,156.2c-1.4,0.7-3.6,1.1-6.4,1.1h-0.6 c0.1-0.7,0.4-1.5,0.7-2.3c0.3-0.8,0.8-1.5,1.3-2.2c0.5-0.7,1.1-1.2,1.9-1.6c0.7-0.4,1.5-0.6,2.5-0.6c0.9,0,1.7,0.2,2.1,0.6 c0.5,0.4,0.7,1.1,0.7,1.9C122.7,154.4,122,155.5,120.5,156.2z" />
+      <path d="M126.4,160c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.4,0c0.3,0,0.6,0,0.8,0.1c0,0.2-0.1,0.5-0.1,0.8c-0.1,0.3-0.1,0.6-0.1,0.7 c0,0.5,0.1,1,0.3,1.4c0.2,0.4,0.5,0.7,0.9,1c0.4,0.3,0.8,0.5,1.4,0.6c0.5,0.1,1.1,0.2,1.7,0.2c1.1,0,2.1-0.3,2.9-0.8 c0.8-0.5,1.1-1.3,1.1-2.4c0-0.8-0.2-1.3-0.7-1.8c-0.5-0.4-1.1-0.8-2-1l-2.5-0.8c-2.1-0.7-3.1-1.9-3.1-3.7c0-0.7,0.1-1.3,0.4-1.9 c0.3-0.6,0.6-1.1,1.1-1.6c0.5-0.5,1.1-0.8,1.8-1.1c0.7-0.3,1.5-0.4,2.3-0.4c1.3,0,2.3,0.2,3,0.6c0.7,0.4,1.2,0.9,1.4,1.5l0.3-1.7 c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.4,0c0.3,0,0.6,0,0.8,0.1l-1.1,5.4c-0.2,0.1-0.5,0.1-0.8,0.1c-0.1,0-0.2,0-0.4,0 c-0.2,0-0.3-0.1-0.4-0.1c0.1-0.5,0.2-1,0.2-1.5c0-0.8-0.3-1.4-0.9-2c-0.6-0.6-1.6-0.8-2.9-0.8c-1.2,0-2.1,0.3-2.8,0.9 c-0.7,0.6-1,1.4-1,2.3c0,0.7,0.2,1.2,0.7,1.5c0.5,0.3,1.1,0.6,1.8,0.8l2.4,0.7c1.3,0.4,2.3,0.9,2.8,1.6c0.5,0.7,0.8,1.5,0.8,2.5 c0,0.8-0.1,1.5-0.4,2.1c-0.3,0.6-0.7,1.2-1.2,1.7c-0.5,0.5-1.1,0.8-1.9,1.1c-0.7,0.3-1.6,0.4-2.5,0.4c-1.2,0-2.3-0.2-3.2-0.6 c-0.9-0.4-1.5-1-1.8-1.7l-0.4,1.8c-0.1,0-0.2,0.1-0.3,0.1c-0.1,0-0.2,0-0.4,0c-0.3,0-0.6,0-0.8-0.1L126.4,160z" />
+      <path d="M156.5,152.8c-0.2-0.7-0.4-1.3-0.8-1.9c-0.4-0.6-0.9-1-1.5-1.4c-0.6-0.3-1.4-0.5-2.4-0.5c-1.3,0-2.4,0.4-3.5,1.1 c-1,0.7-1.8,1.6-2.5,2.7l0.7-3.4h-3.9c0,0-0.1,0.2-0.2,0.4c-0.1,0.2-0.1,0.4-0.1,0.7v0.2c0,0.1,0,0.2,0,0.2h2.1l-3.8,18.8h-2.2 c0,0-0.1,0.2-0.2,0.4c-0.1,0.2-0.1,0.4-0.1,0.7v0.2c0,0.1,0,0.2,0,0.2h6.5c0,0,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.4,0.1-0.7v-0.2 c0-0.1,0-0.2,0-0.2h-2.4l1.3-6.5c0.1,0.4,0.3,0.8,0.5,1.1c0.2,0.4,0.5,0.7,0.9,1c0.4,0.3,0.8,0.5,1.3,0.7c0.5,0.2,1,0.3,1.6,0.3 c2,0,3.7-0.8,5.1-2.3c0.5-0.5,0.9-1.2,1.3-1.9c0.4-0.7,0.7-1.4,1-2.2c0.3-0.8,0.5-1.6,0.6-2.5c0.1-0.8,0.2-1.7,0.2-2.5 C156.8,154.3,156.7,153.5,156.5,152.8z M154.3,158.4c-0.2,1.1-0.6,2.1-1.1,3c-0.5,0.9-1.1,1.7-1.9,2.3c-0.8,0.6-1.7,0.9-2.7,0.9 c-1.2,0-2.1-0.4-2.7-1.2c-0.6-0.8-1-1.8-1-3.1c0-0.8,0.1-1.5,0.3-2.3c0.2-1.1,0.5-2,1-2.9c0.4-0.9,0.9-1.6,1.5-2.3 c0.6-0.6,1.2-1.1,1.8-1.5c0.6-0.4,1.3-0.5,2-0.5s1.2,0.1,1.6,0.4c0.4,0.3,0.8,0.6,1,1.1c0.2,0.4,0.4,0.9,0.5,1.5 c0.1,0.5,0.1,1.1,0.1,1.6C154.6,156.3,154.5,157.3,154.3,158.4z" />
+      <path d="M162.5,151h-2.1c0-0.1,0-0.1,0-0.2v-0.2c0-0.2,0-0.5,0.1-0.7c0.1-0.2,0.1-0.3,0.2-0.4h4.2l-3,14.9h2.1c0,0.1,0,0.1,0,0.2 v0.2c0,0.2,0,0.5-0.1,0.7c-0.1,0.2-0.1,0.3-0.2,0.4h-4.2L162.5,151z" />
+      <path d="M164.4,145.8c-0.4,0-0.7-0.1-1-0.4c-0.2-0.3-0.4-0.6-0.4-1.1c0-0.5,0.1-0.9,0.4-1.3c0.3-0.3,0.6-0.5,1-0.5 c0.4,0,0.7,0.1,0.9,0.4c0.2,0.3,0.4,0.7,0.4,1.1c0,0.5-0.1,0.9-0.4,1.2C165.1,145.6,164.8,145.8,164.4,145.8" />
+      <path d="M170.9,151h-2.1c0-0.1,0-0.1,0-0.2v-0.2c0-0.2,0-0.5,0.1-0.7c0.1-0.2,0.1-0.3,0.2-0.4h3.9l-0.8,3.8c0.2-0.4,0.5-0.9,0.8-1.3 c0.3-0.5,0.7-0.9,1.2-1.2c0.4-0.4,0.9-0.7,1.4-0.9c0.5-0.2,1-0.4,1.6-0.4c0.4,0,0.8,0,1.1,0.1c0.3,0.1,0.5,0.2,0.6,0.3l-0.7,1.9 c-0.1-0.1-0.3-0.1-0.5-0.2c-0.2-0.1-0.5-0.1-0.9-0.1c-0.5,0-1,0.1-1.5,0.4c-0.5,0.3-1.1,0.7-1.6,1.3c-0.5,0.6-1,1.4-1.4,2.3 c-0.4,0.9-0.8,2.1-1,3.4l-1.4,7h-2L170.9,151z" />
+      <path d="M190.4,164.4l3-14.9h-1.4l-1.2,2.1c-0.2-0.5-0.4-0.9-0.7-1.2c-0.3-0.3-0.6-0.6-1-0.8c-0.4-0.2-0.7-0.3-1.1-0.4 c-0.4-0.1-0.8-0.1-1.2-0.1c-0.9,0-1.8,0.2-2.7,0.5c-0.9,0.4-1.7,0.9-2.4,1.7c-1,1.1-1.9,2.3-2.5,3.9c-0.6,1.5-1,3.2-1,5.1 c0,0.6,0.1,1.3,0.2,2c0.1,0.7,0.4,1.4,0.7,2c0.4,0.6,0.8,1.1,1.5,1.5c0.6,0.4,1.4,0.6,2.4,0.6c1.3,0,2.4-0.3,3.4-1 c1-0.7,1.8-1.6,2.5-2.8l-0.7,3.4h4c0,0,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.4,0.1-0.7v-0.2c0-0.1,0-0.2,0-0.2H190.4z M190.1,156.1 c-0.1,0.5-0.1,0.9-0.2,1.3c-0.3,1.2-0.6,2.2-1.1,3.1c-0.5,0.9-1,1.7-1.5,2.3c-0.6,0.6-1.2,1.1-1.8,1.4c-0.6,0.3-1.2,0.5-1.8,0.5 c-0.7,0-1.3-0.2-1.7-0.5c-0.4-0.3-0.8-0.7-1-1.2c-0.2-0.5-0.4-1-0.5-1.5c-0.1-0.6-0.1-1.1-0.1-1.5c0-0.9,0.1-1.9,0.4-2.9 c0.3-1.1,0.7-2.1,1.2-3c0.5-0.9,1.2-1.7,2-2.3c0.8-0.6,1.7-0.9,2.8-0.9c0.6,0,1.1,0.1,1.5,0.3c0.4,0.2,0.7,0.5,1,0.9 c0.3,0.4,0.5,0.8,0.6,1.3c0.1,0.5,0.2,1,0.2,1.6C190.2,155.2,190.2,155.6,190.1,156.1z" />
+      <path d="M199.2,151.2h-2.3c0-0.1,0-0.2,0-0.3v-0.2c0-0.2,0-0.5,0.1-0.7c0.1-0.2,0.1-0.4,0.2-0.4h2.4l0.9-4.3l2.3-1.2l-1.1,5.4h3.6 c0,0.1,0,0.2,0,0.3v0.2c0,0.2,0,0.5-0.1,0.7c-0.1,0.2-0.1,0.4-0.2,0.4h-3.7l-2.1,10.4c-0.1,0.5-0.2,1-0.2,1.4c0,0.4,0.1,0.8,0.4,1 c0.3,0.3,0.7,0.4,1.3,0.4c0.8,0,1.5-0.2,2.2-0.5l-0.3,1.7c-0.3,0.1-0.6,0.2-1,0.3c-0.4,0.1-0.9,0.1-1.3,0.1c-1,0-1.7-0.3-2.3-0.8 c-0.6-0.5-0.9-1.3-0.9-2.3c0-0.3,0-0.6,0.1-1c0-0.3,0.1-0.7,0.2-1L199.2,151.2z" />
+      <path d="M219.6,153.2c-0.2-0.7-0.5-1.4-1-2c-0.5-0.6-1.1-1.1-1.8-1.5c-0.8-0.4-1.7-0.6-2.8-0.6c-1.4,0-2.7,0.3-3.7,1 c-1.1,0.7-2,1.5-2.7,2.6c-0.7,1-1.3,2.2-1.6,3.5c-0.4,1.3-0.5,2.5-0.5,3.7c0,0.9,0.1,1.7,0.4,2.5c0.3,0.8,0.6,1.5,1.1,2 c0.5,0.6,1.1,1,1.9,1.4c0.7,0.3,1.6,0.5,2.6,0.5c1.4,0,2.6-0.3,3.6-1c1.1-0.6,2-1.5,2.7-2.5c0.7-1,1.3-2.2,1.7-3.5 c0.4-1.3,0.6-2.6,0.6-4C219.9,154.7,219.8,153.9,219.6,153.2z M217.5,158.3c-0.2,1-0.6,2-1.1,3c-0.5,0.9-1.1,1.7-1.9,2.4 c-0.8,0.7-1.8,1-2.9,1c-0.8,0-1.4-0.1-1.9-0.4c-0.5-0.3-1-0.6-1.3-1.1c-0.3-0.5-0.6-1-0.7-1.6c-0.2-0.6-0.2-1.2-0.2-1.9 c0-0.5,0-1,0.1-1.7c0.1-0.6,0.2-1.3,0.5-1.9c0.2-0.7,0.5-1.3,0.8-2c0.3-0.6,0.7-1.2,1.2-1.7c0.5-0.5,1-0.9,1.6-1.2 c0.6-0.3,1.3-0.5,2.1-0.5c0.8,0,1.5,0.2,2,0.5c0.5,0.3,0.9,0.7,1.3,1.2c0.3,0.5,0.5,1,0.6,1.6c0.1,0.6,0.2,1.1,0.2,1.7 C217.8,156.4,217.7,157.3,217.5,158.3z" />
+      <path d="M225.4,151h-2.1c0-0.1,0-0.1,0-0.2v-0.2c0-0.2,0-0.5,0.1-0.7c0.1-0.2,0.1-0.3,0.2-0.4h3.9l-0.8,3.8c0.2-0.4,0.5-0.9,0.8-1.3 c0.3-0.5,0.7-0.9,1.2-1.2c0.4-0.4,0.9-0.7,1.4-0.9c0.5-0.2,1-0.4,1.6-0.4c0.4,0,0.8,0,1.1,0.1c0.3,0.1,0.5,0.2,0.6,0.3l-0.7,1.9 c-0.1-0.1-0.3-0.1-0.5-0.2c-0.2-0.1-0.5-0.1-0.9-0.1c-0.5,0-1,0.1-1.5,0.4c-0.5,0.3-1.1,0.7-1.6,1.3c-0.5,0.6-1,1.4-1.4,2.3 c-0.4,0.9-0.8,2.1-1,3.4l-1.4,7h-2L225.4,151z" />
+      <path d="M232.4,169.5c0.4,0.2,0.7,0.3,1.1,0.4c0.3,0.1,0.7,0.1,1.1,0.1c0.8,0,1.7-0.4,2.7-1.2c1-0.8,2-1.9,3-3.3 c-0.3-1.1-0.6-2.3-0.9-3.6c-0.3-1.3-0.7-2.5-1-3.8c-0.4-1.3-0.7-2.5-1.1-3.7c-0.4-1.2-0.7-2.3-1.1-3.3H234c0-0.1,0-0.1,0-0.2v-0.2 c0-0.2,0-0.5,0.1-0.7c0.1-0.2,0.1-0.3,0.2-0.4h3.5c0.2,0.6,0.5,1.5,0.9,2.6c0.3,1.1,0.7,2.3,1.1,3.5c0.4,1.3,0.7,2.6,1.1,3.9 c0.4,1.3,0.7,2.6,1,3.8c0.6-1,1.2-2,1.8-3.1c0.6-1.1,1-2.1,1.4-3.1c0.4-1,0.7-1.9,1-2.8c0.2-0.8,0.4-1.6,0.4-2.1c0-0.3,0-0.5,0-0.7 c0-0.2,0-0.3-0.1-0.5h-2.2c0-0.1,0-0.1,0-0.2v-0.2c0-0.2,0-0.5,0.1-0.7c0.1-0.2,0.1-0.3,0.2-0.4h3.8c0.1,0.2,0.2,0.5,0.3,0.9 c0.1,0.4,0.1,0.7,0.1,1.1c0,1.1-0.2,2.3-0.7,3.7c-0.5,1.4-1.1,2.8-1.8,4.3c-0.7,1.5-1.5,2.9-2.5,4.3c-0.9,1.4-1.8,2.6-2.6,3.7 c-1.2,1.4-2.2,2.5-3.3,3.2c-1,0.7-2.1,1-3.4,1c-0.4,0-0.8,0-1.2-0.1c-0.4-0.1-0.7-0.2-0.9-0.3L232.4,169.5z" />
+      <path d="M275.5,164.3c-0.3,0.2-0.7,0.4-1.1,0.7c-0.5,0.2-1,0.5-1.7,0.7c-0.6,0.2-1.3,0.4-2.1,0.5c-0.8,0.2-1.6,0.2-2.4,0.2 c-1.7,0-3.1-0.3-4.2-0.9c-1.1-0.6-2-1.3-2.7-2.3c-0.7-0.9-1.2-1.9-1.4-3.1c-0.3-1.1-0.4-2.2-0.4-3.3c0-2,0.3-3.9,0.9-5.7 c0.6-1.8,1.4-3.4,2.5-4.8c1.1-1.4,2.4-2.5,3.9-3.4c1.5-0.8,3.1-1.3,4.9-1.3c1.3,0,2.5,0.3,3.6,0.8c1.1,0.5,1.8,1.3,2.3,2.3l0.5-2.5 c0.2-0.1,0.5-0.1,0.8-0.1c0.2,0,0.4,0,0.5,0c0.2,0,0.3,0.1,0.4,0.1l-1.7,8.7c-0.1,0-0.2,0.1-0.4,0.1c-0.1,0-0.3,0-0.5,0 c-0.2,0-0.4,0-0.6,0c-0.2,0-0.3-0.1-0.4-0.1l0.2-1.1c0.1-0.6,0.2-1.3,0.2-1.9c0-0.6-0.1-1.2-0.3-1.8c-0.2-0.5-0.5-1-0.9-1.4 c-0.4-0.4-0.9-0.7-1.5-1c-0.6-0.2-1.4-0.3-2.3-0.3c-1.5,0-2.8,0.4-4.1,1.1c-1.2,0.7-2.3,1.7-3.1,3c-0.9,1.2-1.5,2.6-2,4.2 c-0.5,1.6-0.7,3.2-0.7,4.9c0,1,0.1,2,0.4,3c0.3,0.9,0.7,1.8,1.2,2.5c0.5,0.7,1.2,1.3,2.1,1.7c0.8,0.4,1.9,0.6,3,0.6 c0.8,0,1.6-0.1,2.3-0.3c0.7-0.2,1.4-0.4,2.1-0.7c0.6-0.3,1.2-0.6,1.8-1c0.5-0.4,1-0.7,1.4-1.1L275.5,164.3z" />
+      <path d="M291.9,164.4l3-14.9h-1.4l-1.2,2.1c-0.2-0.5-0.4-0.9-0.7-1.2c-0.3-0.3-0.6-0.6-1-0.8c-0.4-0.2-0.7-0.3-1.1-0.4 c-0.4-0.1-0.8-0.1-1.2-0.1c-0.9,0-1.8,0.2-2.7,0.5c-0.9,0.4-1.7,0.9-2.4,1.7c-1,1.1-1.9,2.3-2.5,3.9c-0.6,1.5-1,3.2-1,5.1 c0,0.6,0.1,1.3,0.2,2c0.1,0.7,0.4,1.4,0.7,2c0.4,0.6,0.8,1.1,1.5,1.5c0.6,0.4,1.4,0.6,2.4,0.6c1.3,0,2.4-0.3,3.4-1 c1-0.7,1.8-1.6,2.5-2.8l-0.7,3.4h4c0,0,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.4,0.1-0.7v-0.2c0-0.1,0-0.2,0-0.2H291.9z M291.6,156.1 c-0.1,0.5-0.1,0.9-0.2,1.3c-0.3,1.2-0.6,2.2-1.1,3.1c-0.5,0.9-1,1.7-1.5,2.3c-0.6,0.6-1.2,1.1-1.8,1.4c-0.6,0.3-1.2,0.5-1.8,0.5 c-0.7,0-1.3-0.2-1.7-0.5c-0.4-0.3-0.8-0.7-1-1.2c-0.2-0.5-0.4-1-0.5-1.5c-0.1-0.6-0.1-1.1-0.1-1.5c0-0.9,0.1-1.9,0.4-2.9 c0.3-1.1,0.7-2.1,1.2-3c0.5-0.9,1.2-1.7,2-2.3c0.8-0.6,1.7-0.9,2.8-0.9c0.6,0,1.1,0.1,1.5,0.3c0.4,0.2,0.7,0.5,1,0.9 c0.3,0.4,0.5,0.8,0.6,1.3c0.1,0.5,0.2,1,0.2,1.6C291.7,155.2,291.7,155.6,291.6,156.1z" />
+      <path d="M300.8,151h-2.1c0-0.1,0-0.1,0-0.2v-0.2c0-0.2,0-0.5,0.1-0.7c0.1-0.2,0.1-0.3,0.2-0.4h3.9l-0.8,3.8c0.2-0.4,0.5-0.9,0.8-1.3 c0.3-0.5,0.7-0.9,1.2-1.2c0.4-0.4,0.9-0.7,1.4-0.9c0.5-0.2,1-0.4,1.6-0.4c0.4,0,0.8,0,1.1,0.1c0.3,0.1,0.5,0.2,0.6,0.3l-0.7,1.9 c-0.1-0.1-0.3-0.1-0.5-0.2c-0.2-0.1-0.5-0.1-0.9-0.1c-0.5,0-1,0.1-1.5,0.4c-0.5,0.3-1.1,0.7-1.6,1.3c-0.5,0.6-1,1.4-1.4,2.3 c-0.4,0.9-0.8,2.1-1,3.4l-1.4,7h-2L300.8,151z" />
+      <path d="M320.4,150.2c-0.8-0.8-1.9-1.1-3.5-1.1c-1.1,0-2,0.2-2.9,0.5c-0.9,0.4-1.6,0.8-2.3,1.4c-0.7,0.6-1.2,1.2-1.7,2 c-0.5,0.7-0.8,1.5-1.1,2.3c-0.3,0.8-0.5,1.5-0.6,2.3c-0.1,0.8-0.2,1.4-0.2,2c0,1,0.1,1.9,0.4,2.8c0.2,0.8,0.6,1.6,1.1,2.1 c0.5,0.6,1.1,1,1.9,1.4c0.7,0.3,1.6,0.5,2.7,0.5c1.1,0,2-0.1,2.9-0.4c0.9-0.3,1.6-0.6,2.2-1l0.4-2.3c-0.3,0.2-0.6,0.4-0.9,0.7 c-0.3,0.2-0.7,0.5-1.1,0.6c-0.4,0.2-0.9,0.4-1.4,0.5c-0.5,0.1-1,0.2-1.6,0.2c-0.8,0-1.4-0.1-2-0.4c-0.5-0.3-1-0.6-1.3-1 c-0.3-0.4-0.6-1-0.7-1.6c-0.2-0.6-0.2-1.3-0.2-2v-0.4c0-0.1,0-0.2,0-0.5h0.9c1.9,0,3.5-0.2,4.8-0.5c1.3-0.3,2.4-0.7,3.2-1.2 c0.8-0.5,1.4-1.1,1.8-1.8c0.4-0.7,0.6-1.4,0.6-2.2C321.5,151.9,321.2,151,320.4,150.2z M317.5,156.2c-1.4,0.7-3.6,1.1-6.4,1.1h-0.6 c0.1-0.7,0.4-1.5,0.7-2.3c0.3-0.8,0.8-1.5,1.3-2.2c0.5-0.7,1.1-1.2,1.9-1.6c0.7-0.4,1.5-0.6,2.5-0.6c0.9,0,1.7,0.2,2.1,0.6 c0.5,0.4,0.7,1.1,0.7,1.9C319.6,154.4,318.9,155.5,317.5,156.2z" />
+      <polygon points="349,185.6 349,128.3 339.7,128.3 339.7,185.6 69.4,185.6 69.4,97.1 94.6,97.1 94.6,89.1 69.4,89.1 69.4,74.5 98.2,74.5 98.2,66.1 59.7,66.1 59.7,190.1 59.7,190.1 59.7,194 349,194 349,185.6 " />
+    </symbol>
+  
+    <symbol id="icon-nav" viewBox="0 0 500 414.1">
+      <title>Navigation</title>
+      <path d="M0,0h500v70.3H0V0z M0,171.9h500v70.3H0V171.9z M0,343.8h500v70.3H0V343.8z M0,0h500v70.3H0V0z" />
+    </symbol>
+  
+    <symbol id="icon-close" viewBox="0 0 52 52">
+      <title>Close</title>
+      <path d="M2913,4529.31l45.59-45.31,6.41,6.37-45.59,45.32Zm6.55-44.62,45.26,44.98-6.36,6.33-45.26-44.99Z" transform="translate(-2913 -4484)" />
+    </symbol>
+  
+    <symbol id="icon-arrow" viewBox="0 0 500 500">
+      <title>Arrow</title>
+      <path d="M108,83.7L108,83.7L108,83.7L108,83.7z M108,83.7l125,160.2L109.1,421.8L214.1,495L392,239.7L209,5L108,83.7z" />
+    </symbol>
+  
+    <symbol id="icon-publications" viewBox="0 0 25 39">
+      <title>Publications</title>
+      <path d="M21.000,23.001 L20.718,22.732 L3.813,39.002 L0.000,35.999 L16.903,19.099 L0.000,2.999 L3.681,0.024 L24.016,19.598 L21.000,23.001 Z" />
+    </symbol>
+  
+    <symbol id="icon-document" viewBox="0 0 500 500">
+      <title>Document</title>
+      <path d="M140.1,295.7h227.3v43.4H140.1V295.7z M140.1,190.7h227.3v43.4H140.1V190.7z M140.1,85.8h227.3v43.4H140.1V85.8z M70,493 h358.2V9H70V493z" />
+    </symbol>
+  
+    <symbol id="icon-spreadsheet" viewBox="0 0 500 500">
+      <title>Spreadsheet</title>
+      <path d="M140.1,295.7h227.3v43.4H140.1V295.7z M140.1,190.7h227.3v43.4H140.1V190.7z M140.1,85.8h227.3v43.4H140.1V85.8z M70,493 h358.2V9H70V493z" />
+    </symbol>
+  
+    <symbol id="icon-presentation" viewBox="0 0 500 500">
+      <title>Presentation</title>
+      <rect x="8" y="120.6" width="411" height="335" />
+      <polygon points="491,398.2 453.2,398.2 453.2,82.1 61.1,82.1 61.1,44.3 491,44.3" />
+    </symbol>
+  
+    <symbol id="icon-pdf" viewBox="0 0 500 500">
+      <title>PDF</title>
+      <path d="M379.1,135.7l34.7,34.7L189.8,394.5L86.8,291.6l34.7-34.7l68.2,68.2L379.1,135.7z M10.7,495.6H490V5H10.7V495.6z" />
+    </symbol>
+  
+    <symbol id="icon-evidence" viewBox="0 0 46.17 31.01">
+      <title>Asthma Zero - Evidence</title>
+      <path d="M12.3,7.63h-.17A3.16,3.16,0,0,1,9,4.47v-2A2.48,2.48,0,0,1,11.45,0H13a2.49,2.49,0,0,1,2.49,2.48v2A3.17,3.17,0,0,1,12.3,7.63ZM11.45,1A1.48,1.48,0,0,0,10,2.48v2a2.16,2.16,0,0,0,2.16,2.16h.17a2.16,2.16,0,0,0,2.16-2.16v-2A1.49,1.49,0,0,0,13,1Z" />
+      <rect x="8.75" y="11.68" width="1" height="17.26" />
+      <rect x="11.71" y="19.05" width="1" height="9.41" />
+      <path d="M15.68,28.19h-1V11.35l.29-.13s3.7-1.68,5.63-2.58a2.16,2.16,0,0,0,1-2.36L14.35,9l-2.14,1.66-2.06-1.6H9.41a2.17,2.17,0,0,0-2.18,2.18v5.35a2,2,0,0,0,2,2v1a3,3,0,0,1-3-3V11.23A3.18,3.18,0,0,1,9.41,8.05h1.08l1.72,1.34,1.72-1.31L22.3,5l.15.51c.31,1,.41,3.23-1.43,4.09-1.61.75-4.43,2-5.34,2.45Z" />
+      <rect x="28.3" y="17.95" width="1" height="10.09" />
+      <polygon points="22.08 14.94 21.18 14.5 23.52 9.73 27.73 9.73 28.49 6.63 32.88 6.63 34.02 3.06 34.97 3.36 33.61 7.63 29.27 7.63 28.52 10.73 24.14 10.73 22.08 14.94" />
+      <polygon points="39.94 18.45 17.66 18.45 17.66 12.21 18.66 12.21 18.66 17.45 38.94 17.45 38.94 1 18.66 1 18.66 5.61 17.66 5.61 17.66 0 39.94 0 39.94 18.45" />
+      <path d="M45.94,31a98.44,98.44,0,0,0-22.85-2.62A98.47,98.47,0,0,0,.23,31L0,30a99.84,99.84,0,0,1,23.09-2.64A99.82,99.82,0,0,1,46.17,30Z" />
+    </symbol>
+  
+    <symbol id="icon-policy" viewBox="0 0 27.12 29.58">
+      <title>Asthma Zero - Policy</title>
+      <path d="M10.36,7.63h-.17A3.17,3.17,0,0,1,7,4.47v-2A2.49,2.49,0,0,1,9.52,0H11a2.48,2.48,0,0,1,2.48,2.48v2A3.16,3.16,0,0,1,10.36,7.63ZM9.52,1A1.49,1.49,0,0,0,8,2.48v2a2.16,2.16,0,0,0,2.16,2.16h.17a2.16,2.16,0,0,0,2.16-2.16v-2A1.48,1.48,0,0,0,11,1Z" />
+      <rect x="6.81" y="11.68" width="1" height="15.93" />
+      <rect x="12.74" y="11.68" width="1" height="15.93" />
+      <rect x="9.78" y="19.05" width="1" height="8.56" />
+      <path d="M13.44,19.55v-1a1.82,1.82,0,0,0,1.82-1.83V11.23a2.17,2.17,0,0,0-2.18-2.18h-.74l-2.06,1.6L8.22,9.05H7.47a2.18,2.18,0,0,0-2.18,2.18v5.35a2,2,0,0,0,2,2v1a3,3,0,0,1-3-3V11.23A3.18,3.18,0,0,1,7.47,8.05H8.56l1.72,1.34L12,8.05h1.08a3.18,3.18,0,0,1,3.18,3.18v5.49A2.83,2.83,0,0,1,13.44,19.55Z" />
+      <path d="M20.26,29.58a34.65,34.65,0,0,0-20,0l-.29-1a35.8,35.8,0,0,1,20.56,0Z" />
+      <path d="M24.93,9.05H19.27a2.21,2.21,0,0,1-2.2-2.2V6.23L14.13,4.47l2.94-1.36V2.19A2.2,2.2,0,0,1,19.27,0h5.66a2.19,2.19,0,0,1,2.19,2.19V6.85A2.2,2.2,0,0,1,24.93,9.05ZM16.27,4.58l1.8,1.08V6.85a1.2,1.2,0,0,0,1.2,1.2h5.66a1.2,1.2,0,0,0,1.19-1.2V2.19A1.2,1.2,0,0,0,24.93,1H19.27a1.2,1.2,0,0,0-1.2,1.19V3.75Z" />
+    </symbol>
+  
+    <symbol id="icon-stakeholders" viewBox="0 0 35.92 31.01">
+      <title>Asthma Zero - Stakeholders</title>
+      <path d="M18.06,7.63h-.17a3.17,3.17,0,0,1-3.16-3.16v-2A2.48,2.48,0,0,1,17.21,0h1.53a2.49,2.49,0,0,1,2.48,2.48v2A3.17,3.17,0,0,1,18.06,7.63ZM17.21,1a1.48,1.48,0,0,0-1.48,1.48v2a2.16,2.16,0,0,0,2.16,2.16h.17a2.16,2.16,0,0,0,2.16-2.16v-2A1.49,1.49,0,0,0,18.74,1Z" />
+      <rect x="14.51" y="11.68" width="1" height="16.29" />
+      <rect x="20.44" y="11.68" width="1" height="16.3" />
+      <rect x="17.47" y="19.05" width="1" height="8.85" />
+      <path d="M21.14,19.55v-1A1.83,1.83,0,0,0,23,16.73v-5.5a2.18,2.18,0,0,0-2.18-2.18H20L18,10.65l-2.06-1.6h-.74A2.18,2.18,0,0,0,13,11.23v5.35a2,2,0,0,0,2,2v1a3,3,0,0,1-3-3V11.23a3.18,3.18,0,0,1,3.18-3.18h1.08L18,9.39l1.72-1.34h1.09A3.18,3.18,0,0,1,24,11.23v5.5A2.83,2.83,0,0,1,21.14,19.55Z" />
+      <path d="M9.22,8.69H9.06a3,3,0,0,1-3-3V4.42a3,3,0,0,1,3-3h.16a3,3,0,0,1,3,3V5.66A3,3,0,0,1,9.22,8.69ZM9.06,2.38a2,2,0,0,0-2,2V5.66a2,2,0,0,0,2,2h.16a2,2,0,0,0,2-2V4.42a2,2,0,0,0-2-2Z" />
+      <rect x="5.82" y="12.52" width="1" height="16.42" />
+      <rect x="8.64" y="19.53" width="1" height="9" />
+      <path d="M6.13,20a2.72,2.72,0,0,1-2.71-2.71V12.09A3.06,3.06,0,0,1,6.47,9h1l1.63,1.27,1.49-1.17.62.79L9.14,11.57,7.17,10h-.7a2.05,2.05,0,0,0-2,2.05v5.23A1.72,1.72,0,0,0,6.13,19Z" />
+      <path d="M26.89,8.69h-.16a3,3,0,0,1-3-3V4.42a3,3,0,0,1,3-3h.16a3,3,0,0,1,3,3V5.66A3,3,0,0,1,26.89,8.69Zm-.16-6.31a2,2,0,0,0-2,2V5.66a2,2,0,0,0,2,2h.16a2,2,0,0,0,2-2V4.42a2,2,0,0,0-2-2Z" />
+      <rect x="29.13" y="12.52" width="1" height="16.42" />
+      <rect x="26.31" y="19.53" width="1" height="9" />
+      <path d="M29.81,20V19a1.71,1.71,0,0,0,1.71-1.71V12.09a2,2,0,0,0-2-2.05h-.7l-2,1.53L24.7,9.93l.62-.79,1.49,1.17L28.43,9h1.05a3,3,0,0,1,3,3.05v5.23A2.71,2.71,0,0,1,29.81,20Z" />
+      <path d="M35.62,31A60,60,0,0,0,18,28.4,60.07,60.07,0,0,0,.29,31l-.29-1A61,61,0,0,1,18,27.4a61,61,0,0,1,18,2.65Z" />
+    </symbol>
+  
+    <symbol id="icon-partnership" viewBox="0 0 35.92 31">
+      <title>Asthma Zero - Partnership</title>
+      <rect x="10.23" y="19.53" width="1" height="8.76" />
+      <path d="M10.09,7.63H9.92A3.17,3.17,0,0,1,6.76,4.47v-2A2.49,2.49,0,0,1,9.25,0h1.52a2.48,2.48,0,0,1,2.48,2.48v2A3.17,3.17,0,0,1,10.09,7.63ZM9.25,1A1.49,1.49,0,0,0,7.76,2.48v2A2.16,2.16,0,0,0,9.92,6.63h.17a2.16,2.16,0,0,0,2.16-2.16v-2A1.48,1.48,0,0,0,10.77,1Z" />
+      <rect x="12.09" y="16.03" width="1" height="12.14" />
+      <path d="M7.93,28.93h-1V12a3.23,3.23,0,0,1,3-3.39,2.91,2.91,0,0,1,2.18.94l2.5,3.87,3.65,1.05a1.89,1.89,0,0,1,.39,3.47,1.92,1.92,0,0,1-1.45.16l-4.8-1.43-3-4.52.82-.56,2.86,4.22,4.45,1.33a.89.89,0,1,0,.5-1.71l-4-1.15-2.65-4.12a1.85,1.85,0,0,0-1.31-.55A2.24,2.24,0,0,0,7.93,12Z" />
+      <rect x="26.15" y="25.79" width="1" height="3.14" />
+      <path d="M26,7.63h-.16a3.17,3.17,0,0,1-3.17-3.16v-2A2.49,2.49,0,0,1,25.15,0h1.52a2.49,2.49,0,0,1,2.49,2.48v2A3.17,3.17,0,0,1,26,7.63ZM25.15,1a1.49,1.49,0,0,0-1.49,1.48v2a2.17,2.17,0,0,0,2.17,2.16H26a2.17,2.17,0,0,0,2.17-2.16v-2A1.49,1.49,0,0,0,26.67,1Z" />
+      <rect x="22.83" y="13.53" width="1" height="6.22" />
+      <rect x="22.83" y="25.79" width="1" height="2.37" />
+      <rect x="18.08" y="16.32" width="5.19" height="1" transform="translate(-3.93 6.57) rotate(-16.51)" />
+      <path d="M29,19.75H28V12a2.23,2.23,0,0,0-2-2.39,1.91,1.91,0,0,0-1.45.62l-2.6,3.94L18,15.23l-.28-1,3.52-1,2.45-3.7a2.88,2.88,0,0,1,2.15-1A3.24,3.24,0,0,1,29,12Z" />
+      <path d="M24.61,20.25a1.78,1.78,0,0,1-1.78-1.78h1a.78.78,0,0,0,1.56,0v-7h1v7A1.78,1.78,0,0,1,24.61,20.25Z" />
+      <path d="M28.3,26.29H20.92a1.39,1.39,0,0,1-1.39-1.39V20.64a1.39,1.39,0,0,1,1.39-1.39H28.3a1.4,1.4,0,0,1,1.4,1.39V24.9A1.4,1.4,0,0,1,28.3,26.29Zm-7.38-6a.38.38,0,0,0-.39.39V24.9a.38.38,0,0,0,.39.39H28.3a.39.39,0,0,0,.4-.39V20.64a.39.39,0,0,0-.4-.39Z" />
+      <path d="M35.62,31A60,60,0,0,0,18,28.39,60.07,60.07,0,0,0,.29,31L0,30a61,61,0,0,1,18-2.65,61,61,0,0,1,18,2.65Z" />
+      <rect x="27.99" y="25.79" width="1" height="2.87" />
+    </symbol>
+  
+    <symbol id="icon-accelerate" viewBox="0 0 68.99 68.99">
+      <title>Precision - Accelerate</title>
+      <path d="M42.26,34.48c0-.06,0-.11,0-.16s0-.21,0-.31l8.27-15.5L36.41,26l-.53.28-.54.29a7.73,7.73,0,0,0-.84-.05,6.62,6.62,0,0,0-1.1.09,7.65,7.65,0,0,0-3,1.07c-.2.12-.39.25-.58.39a7.64,7.64,0,0,0-1.62,1.64,7.48,7.48,0,0,0-1.43,3.55,8.76,8.76,0,0,0-.08,1s0,.1,0,.16H4.47a30.09,30.09,0,0,1,1.7-9.95L10,26.16a26.91,26.91,0,0,1,1.5-3.53L7.67,21A29.94,29.94,0,0,1,12,14.66l2.94,2.94a26.67,26.67,0,0,1,2.71-2.71L14.68,12A30,30,0,0,1,21.5,7.42l1.56,3.87a24.89,24.89,0,0,1,3.55-1.44L25.05,6a29.81,29.81,0,0,1,7.53-1.45V8.7c.63,0,3.2,0,3.83,0V4.54a29.91,29.91,0,0,1,8,1.62L42.8,10a26.91,26.91,0,0,1,3.53,1.5L48,7.66A29.9,29.9,0,0,1,54.31,12l-2.94,2.94a25.68,25.68,0,0,1,2.71,2.71L57,14.66a29.69,29.69,0,0,1,4.54,6.82L57.69,23a24.42,24.42,0,0,1,1.44,3.55L63,25a29.85,29.85,0,0,1,1.53,9.45Zm7,17.47A3.06,3.06,0,0,1,43.83,50,3.07,3.07,0,1,1,49.26,52m-12.85.44a3.07,3.07,0,0,1-5-2.37,3,3,0,0,1,1.15-2.38,3,3,0,0,1,3.83,0,3,3,0,0,1,0,4.75m-14.31.69A3.07,3.07,0,1,1,24,47.65a3.06,3.06,0,0,1-1.93,5.43M69,34.49h0a34.46,34.46,0,0,0-1.85-11.13l0,0-.28-.68-.78-1.94-.38-.93,0,0a34.56,34.56,0,0,0-5.52-8.31l0,0L59,10.26l-.32-.32-1.2-1.2,0,0a34.91,34.91,0,0,0-7.77-5.25l0,0-1.4-.59-.78-.33L46.2,2l0,0a34.28,34.28,0,0,0-9.77-2V0H32.58V.05a34.51,34.51,0,0,0-9.2,1.79l0-.05-1.63.66-.79.32-1.14.46,0,0a34.52,34.52,0,0,0-8.31,5.51l0,0-1.2,1.2-.32.32-1.19,1.2,0,0a34,34,0,0,0-5.25,7.77l0,0L3.06,20.3l-.62,1.46-.43,1H2a34.58,34.58,0,0,0-2,11.7H0A34.33,34.33,0,0,0,1.84,45.6h0l.2.49c.3.84.64,1.67,1,2.49l.24.58h0a34.77,34.77,0,0,0,5.51,8.32l0,0,.44.44,1.85,1.85.42.42,0,0a34.45,34.45,0,0,0,7.78,5.26h0l.22.1c1,.49,2.08.94,3.16,1.34l.15.06h0a34.5,34.5,0,0,0,9.79,2H33c.49,0,1,0,1.46,0s1,0,1.45,0h.46a34.35,34.35,0,0,0,9.22-1.8v0l.31-.12c1-.35,1.93-.73,2.87-1.16l.38-.15v0a34.81,34.81,0,0,0,8.32-5.52l0,0,.42-.42,1.85-1.85.44-.44,0,0a34.75,34.75,0,0,0,5.25-7.78h0l.19-.43c.4-.85.77-1.72,1.1-2.6l.21-.49,0,0a34.46,34.46,0,0,0,2-11.68" />
+    </symbol>
+    <symbol id="icon-build" viewBox="0 0 76.01 63">
+      <title>Precision - Build</title>
+      <path class="cls-1" d="M5.87,10.89a5.26,5.26,0,1,1,5.31,5.2h0A5.2,5.2,0,0,1,5.87,11v-.06M51,36.09A2.13,2.13,0,0,1,53.18,34h.41a2.14,2.14,0,0,1,2.22,2.06v0a2.22,2.22,0,0,1-2.22,2.2h-.35A2.22,2.22,0,0,1,51,36.09M63,50.7a5,5,0,1,1,5.17,4.79H68a5,5,0,0,1-5-4.8m-18.29,0a5,5,0,1,1,5.17,4.79h-.18a5,5,0,0,1-5-4.8m-18.28,0a5,5,0,1,1,5.16,4.79h-.18a5,5,0,0,1-5-4.8M4.18,56.89V39.39H2a1.91,1.91,0,0,1-2-1.84V20a1.91,1.91,0,0,1,1.92-1.9h5l4.1,4,4.1-4h6.08V4.7a2.23,2.23,0,0,1,2.23-2.2h14.5c0-.1,0-.2,0-.3A2.22,2.22,0,0,1,40.08,0h7.28a2.22,2.22,0,0,1,2.22,2.2c0,.1,0,.2,0,.3H65.92a2.22,2.22,0,0,1,2.22,2.2V36.1a2.22,2.22,0,0,1-2.22,2.2H60.7a2.23,2.23,0,0,1-2.23-2.2A2.13,2.13,0,0,1,60.65,34h3V6.8H25.6V18.1H30a1.91,1.91,0,0,1,2,1.84V22.3a2,2,0,0,1-2,2H25.6V34H46.13a2.14,2.14,0,0,1,2.23,2v.05a2.23,2.23,0,0,1-2.23,2.2H23.38a2.23,2.23,0,0,1-2.23-2.2V24.3H17.76V56.9a1.5,1.5,0,0,1-1.5,1.5H12.53a1.61,1.61,0,0,0-3.12,0H5.78A1.52,1.52,0,0,1,4.18,57V56.9M60.3,63V59a1.86,1.86,0,0,1,1.82-1.9h12A1.86,1.86,0,0,1,76,58.94V63ZM42,63V59a1.86,1.86,0,0,1,1.82-1.9h12a1.86,1.86,0,0,1,1.87,1.84V63ZM23.72,63V59a1.87,1.87,0,0,1,1.83-1.9h12a1.86,1.86,0,0,1,1.87,1.84V63Z" />
+    </symbol>
+    <symbol id="icon-expand" viewBox="0 0 76.11 75.13">
+      <title>Precision - Expand</title>
+      <path class="cls-1" d="M46.72,11.27,39.52.52a.09.09,0,0,0-.07-.11h0a.1.1,0,0,0-.09-.1h-.09c-.09,0-.09-.1-.17-.1S39,.1,38.92.1s-.09-.1-.17-.1h-1c-.08,0-.17,0-.17.1s-.08.11-.17.11a.09.09,0,0,0-.09.09H37.2l-.08.1L37,.52,37,.62,29.66,11.38a1.73,1.73,0,0,0,.47,2.4l0,0a2.78,2.78,0,0,0,.94.2,1.77,1.77,0,0,0,1.47-.71l4.11-6.19V25.58a1.72,1.72,0,1,0,3.43,0V7.11l4.11,6.09a1.63,1.63,0,0,0,1.46.71,2.78,2.78,0,0,0,.94-.2,2.09,2.09,0,0,0,.09-2.44M76,36.75a.1.1,0,0,1-.09-.1h0c0-.1-.08-.1-.08-.2a.09.09,0,0,0-.09-.1h0a.1.1,0,0,0-.07-.1h-.11c-.08,0-.08-.11-.17-.11l-10.88-7.2a1.65,1.65,0,0,0-2.32.38.83.83,0,0,0-.08.12,1.61,1.61,0,0,0,.4,2.26l.11.08,6.17,4.06H50.14a1.73,1.73,0,0,0,0,3.45h18.6l-6.17,4.06a1.71,1.71,0,0,0,1,3.14,1.51,1.51,0,0,0,.94-.3L75.34,39a.1.1,0,0,0,.09-.1h.17l.09-.1.09-.11c0-.1.08-.1.08-.2a.08.08,0,0,1,.08-.1h0m.16-.41v-.8m-38,10.56a1.75,1.75,0,0,0-1.72,1.72V67.9l-4.12-6.09a1.73,1.73,0,0,0-2.39-.5,1.69,1.69,0,0,0-.53,2.32h0L36.61,74.4a.08.08,0,0,0,.06.1h0a.1.1,0,0,0,.08.11h.09l.09.1.08.1h.09l.08.1a.42.42,0,0,1,.18.11h.17c.08,0,.25.1.34.1a.35.35,0,0,0,.34-.1h.17a.25.25,0,0,0,.17-.11.09.09,0,0,0,.1-.09h.08a.1.1,0,0,0,.08-.1l.09-.1H39l.09-.11.08-.1,7.29-10.76a1.62,1.62,0,0,0-.4-2.26.41.41,0,0,0-.11-.07,1.65,1.65,0,0,0-2.32.38l-.08.12L39.77,67.9V49.43a1.74,1.74,0,0,0-1.7-1.72M12.6,46.39a1.72,1.72,0,0,0,1-3.1l-.08,0L7.38,39.18H26a1.73,1.73,0,0,0,0-3.45H7.38l6.17-4.06a1.72,1.72,0,0,0,.52-2.33,1.76,1.76,0,0,0-2.41-.51L.77,36c-.08,0-.08.1-.16.1l-.09.1H.44l-.1.11c0,.1-.08.1-.08.2s-.09.1-.09.2l-.08.1a.22.22,0,0,1-.09.21v.71c0,.1,0,.1.09.1a.22.22,0,0,0,.08.2c0,.1.09.1.09.2a.1.1,0,0,0,.07.11h0a.1.1,0,0,0,.09.1h0a.08.08,0,0,0,.07.1h.1l.08.11.08.1L11.66,46a1.17,1.17,0,0,0,.94.4" />
+    </symbol>
+    <symbol id="icon-access" viewBox="0 0 74.99 65">
+      <title>Precision - Access</title>
+      <path class="cls-1" d="M18.52,50.8a1.67,1.67,0,0,0,1.13.4,1,1,0,0,0,.55-.11,1.72,1.72,0,0,0,1.13-1.3,1.61,1.61,0,0,0-.53-1.5,25.37,25.37,0,0,1-6.39-8.9,1.74,1.74,0,0,0-1.59-1,1.68,1.68,0,0,0-1.42.81,1.52,1.52,0,0,0-.15,1.5,28.91,28.91,0,0,0,7.27,10.1m36.27.3a1.15,1.15,0,0,0,.55.1,1.62,1.62,0,0,0,1.13-.4,28.82,28.82,0,0,0,7.27-10.1,1.52,1.52,0,0,0-.15-1.5,1.7,1.7,0,0,0-1.42-.8h0a1.72,1.72,0,0,0-1.56,1,25.55,25.55,0,0,1-6.39,8.9,1.6,1.6,0,0,0-.53,1.5,1.58,1.58,0,0,0,1.13,1.3M52,5.7h0A29,29,0,0,0,23,5.7a1.66,1.66,0,0,0-.83,1.4,1.8,1.8,0,0,0,.76,1.5,1.61,1.61,0,0,0,.94.2,1.4,1.4,0,0,0,.87-.2,25.12,25.12,0,0,1,25.59,0,1.73,1.73,0,0,0,1.82-.1,1.53,1.53,0,0,0,.75-1.4A1.68,1.68,0,0,0,52,5.7M11.79,0H10.35A6.3,6.3,0,0,0,4,6.28V9a6.34,6.34,0,0,0,6.38,6.3h1.37A6.34,6.34,0,0,0,18.18,9V6.3a5.69,5.69,0,0,0-.35-2,6.38,6.38,0,0,0-6-4.3M22.22,30.9V25.8a8,8,0,0,0-8.06-8H8.05a8,8,0,0,0-4,1.1A10.05,10.05,0,0,0,1.65,21,7.8,7.8,0,0,0,0,25.8v5.1Zm41-14.3h1.36A6.33,6.33,0,0,0,71,10.32V7.6a6.33,6.33,0,0,0-6.36-6.3H63.2a4.29,4.29,0,0,0-1.13.1,6.25,6.25,0,0,0-3.84,2.2,6.33,6.33,0,0,0-1.42,4v2.7a6.33,6.33,0,0,0,6.37,6.3h0M72.12,21a8.35,8.35,0,0,0-1.57-1,7.25,7.25,0,0,0-3.61-.9H60.83a8,8,0,0,0-8.06,8v5.1H75V27.1A7.9,7.9,0,0,0,72.12,21M38.17,49.39a6.33,6.33,0,0,0,6.4-6.28V40.39a6.34,6.34,0,0,0-6.38-6.3H36.81a6.35,6.35,0,0,0-6.39,6.29h0v2.7a6.34,6.34,0,0,0,6.38,6.3h1.37ZM26.38,59.89V65H48.6V59.89a8,8,0,0,0-8.05-8H34.44a8.06,8.06,0,0,0-8.06,8" />
+    </symbol>
+  
+  </svg><script>
+    /* Lockr - Tracker.js dependency - https://github.com/tsironis/lockr */
+    !function (e, t) { "undefined" != typeof exports ? "undefined" != typeof module && module.exports && (exports = module.exports = t(e, exports)) : "function" == typeof define && define.amd ? define(["exports"], function (r) { e.Lockr = t(e, r) }) : e.Lockr = t(e, {}) }(this, function (e, t) { "use strict"; return Array.prototype.indexOf || (Array.prototype.indexOf = function (e) { var t = this.length >>> 0, r = Number(arguments[1]) || 0; for ((r = r < 0 ? Math.ceil(r) : Math.floor(r)) < 0 && (r += t); r < t; r++)if (r in this && this[r] === e) return r; return -1 }), t.prefix = "", t._getPrefixedKey = function (e, t) { return (t = t || {}).noPrefix ? e : this.prefix + e }, t.set = function (e, t, r) { var o = this._getPrefixedKey(e, r); try { localStorage.setItem(o, JSON.stringify({ data: t })) } catch (r) { console && console.warn("Lockr didn't successfully save the '{" + e + ": " + t + "}' pair, because the localStorage is full.") } }, t.get = function (e, t, r) { var o, n = this._getPrefixedKey(e, r); try { o = JSON.parse(localStorage.getItem(n)) } catch (e) { o = localStorage[n] ? { data: localStorage.getItem(n) } : null } return o ? "object" == typeof o && void 0 !== o.data ? o.data : void 0 : t }, t.sadd = function (e, r, o) { var n, a = this._getPrefixedKey(e, o), i = t.smembers(e); if (i.indexOf(r) > -1) return null; try { i.push(r), n = JSON.stringify({ data: i }), localStorage.setItem(a, n) } catch (t) { console.log(t), console && console.warn("Lockr didn't successfully add the " + r + " to " + e + " set, because the localStorage is full.") } }, t.smembers = function (e, t) { var r, o = this._getPrefixedKey(e, t); try { r = JSON.parse(localStorage.getItem(o)) } catch (e) { r = null } return r && r.data ? r.data : [] }, t.sismember = function (e, r, o) { return t.smembers(e).indexOf(r) > -1 }, t.keys = function () { var e = [], r = Object.keys(localStorage); return 0 === t.prefix.length ? r : (r.forEach(function (r) { -1 !== r.indexOf(t.prefix) && e.push(r.replace(t.prefix, "")) }), e) }, t.getAll = function (e) { var r = t.keys(); return e ? r.reduce(function (e, r) { var o = {}; return o[r] = t.get(r), e.push(o), e }, []) : r.map(function (e) { return t.get(e) }) }, t.srem = function (e, r, o) { var n, a, i = this._getPrefixedKey(e, o), c = t.smembers(e, r); (a = c.indexOf(r)) > -1 && c.splice(a, 1), n = JSON.stringify({ data: c }); try { localStorage.setItem(i, n) } catch (t) { console && console.warn("Lockr couldn't remove the " + r + " from the set " + e) } }, t.rm = function (e) { var t = this._getPrefixedKey(e); localStorage.removeItem(t) }, t.flush = function () { t.prefix.length ? t.keys().forEach(function (e) { localStorage.removeItem(t._getPrefixedKey(e)) }) : localStorage.clear() }, t });
+  </script>
+  <script src="../../js/main.js"></script></body>
+
+
+</html>
