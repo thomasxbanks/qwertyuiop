@@ -29,9 +29,12 @@
     const pageHeaderHeight = window.getComputedStyle(pageHeader, null).getPropertyValue('height')
     const filterForm = dataTable.querySelector('form')
     const filterFormHeight = window.getComputedStyle(filterForm, null).getPropertyValue('height')
+    const pageFooter = document.querySelector('.footer_container')
+    const pageFooterHeight = window.getComputedStyle(pageFooter, null).getPropertyValue('height')
     const numberizeValue = (value, unit = 'px') => parseInt(value.slice(0, -(unit.toString().length)));
     const heightsToOffset =
       numberizeValue(mastheadHeight) +
       numberizeValue(pageHeaderHeight) +
+      numberizeValue(pageFooterHeight) + 32 +
       numberizeValue(filterFormHeight)
     dataTable.querySelector('.rows').style.height = `calc(100vh - ${heightsToOffset}px)`</script></body></html>

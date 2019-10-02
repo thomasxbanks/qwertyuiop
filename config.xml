@@ -9,6 +9,7 @@
     <author email="lxlabsadmin@havaslynx.com" href="https://havaslynx.com">
         LXLABS / HAVAS LYNX
     </author>
+    <preference name="phonegap-version" value="cli-7.1.0" />
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="fullscreen" value="true" />
@@ -40,6 +41,7 @@
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+    <plugin name="cordova-plugin-file-opener2" spec="https://github.com/agilethomas/cordova-plugin-file-opener2" />
     <platform name="ios">
         <icon height="57" platform="ios" src="www/images/res/ios/icon/icon.png" width="57" />
         <icon height="114" platform="ios" src="www/images/res/ios/icon/icon@2x.png" width="114" />
