@@ -51,8 +51,7 @@
     <!-- <plugin name="cordova-plugin-screen-orientation" spec="~3.0.1" /> -->
     <plugin name="cordova-plugin-file" spec="~4.3.3" />
     <plugin name="cordova-plugin-file-opener2" spec="~2.2.1" />
-    <!-- <plugin name="cordova-plugin-statusbar" spec="~2.4.3" /> -->
-    <!-- <plugin name="cordova-plugin-file-opener2" spec="https://github.com/agilethomas/cordova-plugin-file-opener2" /> -->
+    <plugin name="cordova-plugin-statusbar" spec="~2.4.3" />
     <platform name="ios">
         <icon height="57" platform="ios" src="images/res/ios/icon/icon.png" width="57" />
         <icon height="114" platform="ios" src="images/res/ios/icon/icon@2x.png" width="114" />
