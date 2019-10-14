@@ -9,7 +9,7 @@
     <author email="lxlabsadmin@havaslynx.com" href="https://havaslynx.com">
         LXLABS / HAVAS LYNX
     </author>
-    <preference name="phonegap-version" value="cli-7.1.0" />
+    <preference name="phonegap-version" value="cli-9.0.0" />
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="fullscreen" value="true" />
