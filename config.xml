@@ -22,6 +22,7 @@
     <preference name="prerendered-icon" value="true" />
     <preference name="detect-data-types" value="false" />
     <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="false" />
     <preference name="AllowInlineMediaPlayback" value="true" />
     <gap:config-file parent="UIStatusBarHidden" platform="ios" target="*-Info.plist">
         <true />
