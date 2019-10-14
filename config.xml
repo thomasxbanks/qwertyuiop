@@ -11,13 +11,17 @@
     </author>
     <preference name="phonegap-version" value="cli-9.0.0" />
     <engine name="ios" spec="^5.0.0" />
-    <preference name="deployment-target" value="10.0" />
+    <gap:plaform name="ios" />
     <content src="index.html" />
+    <preference name="deployment-target" value="10.0" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="fullscreen" value="true" />
     <preference name="orientation" value="landscape" />
     <preference name="target-device" value="tablet" />
-    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="detect-data-types" value="false" />
+    <preference name="exit-on-suspend" value="false" />
     <preference name="AllowInlineMediaPlayback" value="true" />
     <gap:config-file parent="UIStatusBarHidden" platform="ios" target="*-Info.plist">
         <true />
@@ -43,6 +47,11 @@
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.7.2" />
+    <plugin name="cordova-plugin-screen-orientation" spec="~3.0.1" />
+    <plugin name="cordova-plugin-file" spec="~4.3.3" />
+    <plugin name="cordova-plugin-file-opener2" spec="~2.2.1" />
+    <plugin name="cordova-plugin-statusbar" spec="~2.4.3" />
     <!-- <plugin name="cordova-plugin-file-opener2" spec="https://github.com/agilethomas/cordova-plugin-file-opener2" /> -->
     <platform name="ios">
         <icon height="57" platform="ios" src="images/res/ios/icon/icon.png" width="57" />
@@ -83,9 +92,5 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <plugin name="cordova-plugin-inappbrowser" spec="~1.7.2" />
-    <plugin name="cordova-plugin-screen-orientation" spec="~3.0.1" />
-    <plugin name="cordova-plugin-file" spec="~4.3.3" />
-    <plugin name="cordova-plugin-file-opener2" spec="~2.2.1" />
-    <plugin name="cordova-plugin-statusbar" spec="~2.4.3" />
+
 </widget>
