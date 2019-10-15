@@ -24,12 +24,7 @@
     <preference name="exit-on-suspend" value="false" />
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="AllowInlineMediaPlayback" value="true" />
-    <gap:config-file parent="UIStatusBarHidden" platform="ios" target="*-Info.plist">
-        <true />
-    </gap:config-file>
-    <gap:config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist">
-        <false />
-    </gap:config-file>
+
     <!-- <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" /> -->
     <!-- <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" /> -->
     <!-- <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" /> -->
