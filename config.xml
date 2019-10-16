@@ -9,10 +9,12 @@
     <author email="lxlabsadmin@havaslynx.com" href="https://havaslynx.com">
         LXLABS / HAVAS LYNX
     </author>
+
     <preference name="phonegap-version" value="cli-9.0.0" />
     <engine name="ios" spec="^5.0.0" />
-    <gap:plaform name="ios" />
+
     <content src="index.html" />
+
     <preference name="deployment-target" value="10.0" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="fullscreen" value="false" />
@@ -24,10 +26,8 @@
     <preference name="exit-on-suspend" value="false" />
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="AllowInlineMediaPlayback" value="true" />
-    <plaform name="ios" />
-        <preference name="StatusBarOverlaysWebView" value="false" />
-        <preference name="StatusBarBackgroundColor" value="#FF00FF" />
-    </plaform>
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#FF00FF" />
 
     <!-- <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" /> -->
     <!-- <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" /> -->
@@ -52,6 +52,7 @@
     <plugin name="cordova-plugin-file" spec="~4.3.3" />
     <plugin name="cordova-plugin-file-opener2" spec="~2.2.1" />
     <plugin name="cordova-plugin-statusbar" spec="~2.4.3" />
+
     <platform name="ios">
         <icon height="57" platform="ios" src="images/res/ios/icon/icon.png" width="57" />
         <icon height="114" platform="ios" src="images/res/ios/icon/icon@2x.png" width="114" />
@@ -80,13 +81,16 @@
         <splash height="960" platform="ios" src="images/res/ios/splash/Default@2x~iphone.png" width="640" />
         <splash height="480" platform="ios" src="images/res/ios/splash/Default~iphone.png" width="320" />
     </platform>
+
     <access origin="*" />
+
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
