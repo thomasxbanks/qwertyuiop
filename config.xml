@@ -11,7 +11,7 @@
     </author>
     <preference name="phonegap-version" value="cli-9.0.0" />
     <engine name="ios" spec="^5.0.0" />
-    <plaform name="ios" />
+    <gap:plaform name="ios" />
     <content src="index.html" />
     <preference name="deployment-target" value="10.0" />
     <preference name="DisallowOverscroll" value="true" />
@@ -27,12 +27,6 @@
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#FF00FF" />
 
-    <gap:config-file parent="StatusBarHidden" platform="ios" target="*-Info.plist">
-        <true />
-    </gap:config-file>
-    <gap:config-file parent="ViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist">
-        <false />
-    </gap:config-file>
     <!-- <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" /> -->
     <!-- <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" /> -->
     <!-- <plugin name="cordova-plugin-contacts" source="npm" spec="~2.0.1" /> -->
