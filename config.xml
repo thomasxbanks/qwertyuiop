@@ -27,12 +27,14 @@
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="AllowInlineMediaPlayback" value="true" />
 
-    <edit-config file="platforms/ios/ios.json" mode="merge" target="StatusBarHidden">
-        <true />
-    </edit-config>
-    <edit-config file="platforms/ios/ios.json" mode="merge" target="ViewControllerBasedStatusBarAppearance">
-        <false />
-    </edit-config>
+    <platform name="ios">
+        <edit-config file="platforms/ios/ios.json" mode="merge" target="StatusBarHidden">
+            <true />
+        </edit-config>
+        <edit-config file="platforms/ios/ios.json" mode="merge" target="ViewControllerBasedStatusBarAppearance">
+            <false />
+        </edit-config>
+    </platform>
 
     <platform name="ios">
         <icon height="57" platform="ios" src="images/res/ios/icon/icon.png" width="57" />
