@@ -34,7 +34,6 @@
         <edit-config file="platform/ios/ios.json" mode="merge" target="ViewControllerBasedStatusBarAppearance">
             <false />
         </edit-config>
-
         <icon height="57" platform="ios" src="images/res/ios/icon/icon.png" width="57" />
         <icon height="114" platform="ios" src="images/res/ios/icon/icon@2x.png" width="114" />
         <icon height="40" platform="ios" src="images/res/ios/icon/icon-40.png" width="40" />
