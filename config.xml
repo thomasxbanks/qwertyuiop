@@ -15,7 +15,7 @@
     <content src="index.html" />
     <preference name="deployment-target" value="10.0" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="fullscreen" value="true" />
+    <preference name="fullscreen" value="false" />
     <preference name="orientation" value="landscape" />
     <preference name="target-device" value="tablet" />
     <preference name="DisallowOverscroll" value="true" />
