@@ -28,10 +28,10 @@
     <preference name="AllowInlineMediaPlayback" value="true" />
 
     <platform name="ios">
-        <edit-config file="platforms/ios/ios.json" mode="merge" target="StatusBarHidden">
+        <edit-config file="platforms/ios/ios.json" mode="merge" target="UIStatusBarHidden">
             <true />
         </edit-config>
-        <edit-config file="platforms/ios/ios.json" mode="merge" target="ViewControllerBasedStatusBarAppearance">
+        <edit-config file="platforms/ios/ios.json" mode="merge" target="UIViewControllerBasedStatusBarAppearance">
             <false />
         </edit-config>
     </platform>
