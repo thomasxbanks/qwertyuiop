@@ -26,14 +26,10 @@
     <preference name="exit-on-suspend" value="false" />
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="blacktranslucent" />
 
     <platform name="ios">
-        <edit-config file="*-Info.plist" mode="merge" target="StatusBarHidden">
-            <true />
-        </edit-config>
-        <edit-config file="*-Info.plist" mode="merge" target="ViewControllerBasedStatusBarAppearance">
-            <false />
-        </edit-config>
         <icon height="57" platform="ios" src="images/res/ios/icon/icon.png" width="57" />
         <icon height="114" platform="ios" src="images/res/ios/icon/icon@2x.png" width="114" />
         <icon height="40" platform="ios" src="images/res/ios/icon/icon-40.png" width="40" />
