@@ -24,8 +24,10 @@
     <preference name="exit-on-suspend" value="false" />
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="AllowInlineMediaPlayback" value="true" />
-    <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#FF00FF" />
+    <plaform name="ios" />
+        <preference name="StatusBarOverlaysWebView" value="false" />
+        <preference name="StatusBarBackgroundColor" value="#FF00FF" />
+    </plaform>
 
     <!-- <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" /> -->
     <!-- <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" /> -->
