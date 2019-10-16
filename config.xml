@@ -25,10 +25,10 @@
     <preference name="AllowInlineMediaPlayback" value="true" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#FF00FF" />
-    <edit-config file="platforms/ios/ios.json" mode="merge" target="UIStatusBarHidden">
+    <edit-config file="platforms/ios/ios.json" mode="merge" target="StatusBarHidden">
         <true />
     </edit-config>
-    <edit-config file="platforms/ios/ios.json" mode="merge" target="UIViewControllerBasedStatusBarAppearance">
+    <edit-config file="platforms/ios/ios.json" mode="merge" target="ViewControllerBasedStatusBarAppearance">
         <false />
     </edit-config>
     <platform name="ios">
