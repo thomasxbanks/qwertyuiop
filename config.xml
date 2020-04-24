@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.havaslynx.cooperazrespitool" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.havaslynx.cooperazrespitool" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>
-        RespiCare
+        AZ Respiratory Resource Tool
     </name>
     <description>
         AstraZeneca "Reframing Respiratory Care" MSL Tool
